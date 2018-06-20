@@ -1,0 +1,36 @@
+body {
+    font-family: 'Do Hyeon', sans-serif;
+    background: linear-gradient(to right, #ffffff, #999999);
+}
+
+#contenedor {
+    height: auto;
+    margin: 4vw;
+    border: 1px solid #888888;
+    background: linear-gradient(to left, #cccccc, #999999);
+}
+
+.seccion {
+    margin: 10%;
+    width: auto;
+    height: auto;
+    padding: 40px;
+    border: 1px solid #222222;
+    border-radius: 20px;
+    text-align: center;
+    background: linear-gradient(to right, #ffffff, #999999);
+}
+
+.text-left {
+    text-align: left;
+}
+
+span {
+    font-weight: bold;
+    text-decoration: underline black;
+}
+
+.logo{
+    width: 20%;
+    border-radius: 10px;
+}

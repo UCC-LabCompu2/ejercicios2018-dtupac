@@ -1,0 +1,19 @@
+body {
+    background: #c2c2c2;
+}
+
+.izquierdo {
+    position: relative;
+    float: left;
+    width:20%;
+    height:auto;
+    background: #cccccc;
+}
+
+.derecho {
+    position: relative;
+    float:left;
+    width:20%;
+    height:auto;
+    background: #c66666;
+}

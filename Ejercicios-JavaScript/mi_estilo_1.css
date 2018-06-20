@@ -1,0 +1,22 @@
+body {
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+    font-size: 150%;
+    background-image: linear-gradient(to right, #776688, #19ac67);
+}
+
+div {
+    padding: 20px 20%; /*margenes internos*/
+    margin: 30px;
+    border: 2px solid #7a8aac;
+    border-radius: 20px;
+    background-color: #f1f1f1;
+}
+
+.imgUsario {
+    width: 20%;
+    border-radius: 50%;
+}
+span{
+    font-weight: bold;
+}
