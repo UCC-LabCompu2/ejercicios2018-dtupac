@@ -1,0 +1,247 @@
+/*
+Esto es un comentario en CSS
+
+4 elementos a los que les podemos dar estilos:
+	1) etiquetas html
+	2) identificadores html->id  css->#
+	3) clases html->class css->.
+	4) pseudo clases :hover trabajan o se desencadenan con eventos por ejemplo al estar el mouse sobre los elementos
+
+Reglas de Oro para trabajar con CSS
+
+1)los estilos se definen en el siguiente orden:
+	1)etiquetas HTML
+	2)identificadores
+	3)clases
+	ordenadas alfabeticamente
+
+2) los atributos se ordenan alfabeticamente
+
+3) en el body siempre hay que especificar un tamaño de fuente
+
+http://meyerweb.com/eric/css/colors/
+http://html-color-codes.info/
+
+unidades de medida en css:
+	unidades relativas
+		% em
+	unidades absolutas
+		px pt
+	
+	100% = 12pt = 16px = 1em 
+
+http://www.fontsquirrel.com/
+*/
+*
+{
+	border: 0;
+	margin: 0;
+	/*padding: 0;*/
+}
+p {	font-family: Calibri; font-size: 0.53em; padding: 0.2em 0; }
+a {text-decoration: none; color: #fff;}
+a:hover {text-decoration: underline;}
+
+@font-face
+{
+	font-family: "Chalet";
+	font-style: normal;
+	font-weight: normal;
+	src: url(../fonts/Chalet.eot);
+	src: url(../fonts/Chalet.eot?#iefix) format("embedded-opentype"),
+		url(../fonts/Chalet.woff) format("woff"),
+		url(../fonts/Chalet.ttf) format("truetype"),
+		url(../fonts/Chalet.svg#Chalet) format("svg");
+}
+
+.ir-arriba {
+	display:none;
+	padding:20px;
+	background: dimgrey;
+	font-size:20px;
+	color: #FFFFFF;
+	cursor:pointer;
+	position: fixed;
+	bottom:20px;
+	right:20px;
+	border-radius: 5px;
+	opacity: .5;
+}
+
+article
+{
+	/*background: #011E30;*/
+	border-radius: .5em;
+	margin: 1em;
+	min-height: 120px;
+	padding: .25em;
+	text-align: left;
+}
+
+/*
+aside
+{
+	background: #1E6381;
+	border-radius: .5em;
+	display: inline-block;
+	margin: .25em auto;
+	min-height: 200px;
+	vertical-align: top;
+	width: 75%;
+
+}
+*/
+
+#principal
+{
+	background: #1E6381;
+	border-radius: .5em;
+	display: inline-block;
+	margin: .25em auto;
+	min-height: 200px;
+	vertical-align: top;
+	/*width: 75%;*/
+	width: 96%;
+}
+
+aside
+{
+	width: 20%;
+	/*position: fixed;*/
+
+}
+
+body
+{
+	background: #FFF url(../img/fondo.jpg);
+	color: white;
+	font-family: "Chalet", Helvetica, Verdana;
+	font-size: 2em;
+}
+
+footer, header
+{
+	background: #1E6381;
+	border-radius: .5em;
+	margin: .25em auto;
+	padding: .25em;
+	text-align: center;
+	width: 80%;
+}
+
+nav
+{
+
+	background: #1E6381;
+	border-radius: .5em;
+	margin: .25em auto;
+	padding: .25em;
+	text-align: center;
+	width: 80%;
+
+}
+
+h1
+{
+	color: #F60;
+	margin: .25em auto; /* auto en el valor de R-L ,e centra el elemento respecto a la página*/
+	text-align: center; /* left/right/justify */
+	text-shadow: 5px 5px 10px rgba(255,255,255,.5);
+	width: 90%;
+}
+h5 {
+	padding: 0.2em 0;
+}
+h6 {
+	padding: 0.2em 0;
+}
+
+ol li{
+	padding: 0.1em 0;
+}
+
+
+
+#contenedor
+{
+	margin: .25em auto;
+	padding: 0;
+	text-align: center;
+	width: 84.5%; /*84.5%*/
+}
+
+.w3-ul{
+    list-style-type:none;
+    padding:0;margin:0
+}
+.w3-ul li{
+    padding:8px 16px;
+    border-bottom:1px solid #ddd
+}
+.w3-ul li:last-child{border-bottom:none}
+
+.w3-blue,.w3-hover-blue:hover{color:#fff!important;background-color:#2196F3!important}
+
+ul li, ol li { font-family: Calibri; font-size: 0.53em; /*17px*/}
+
+#nava{
+	-webkit-padding-start: unset;
+}
+
+#nava li{
+	display: inline-block;
+	list-style-type:none;
+	vertical-align: 0.5em;
+	/*border-bottom:none;*/
+	/*text-decoration: underline;*/
+	padding: 10px;
+	margin: 0.05em;
+	border-radius: 5px;
+	color:#fff!important;
+	background-color:#011E30!important
+
+}
+
+#nava li a:hover {
+	text-decoration: none;
+	opacity: 0.3;
+
+	/*display: block;*/
+	/*text-decoration: underline;*/
+
+}
+
+.pregunta {
+	color: #011E30;
+	font-weight: bold;
+	font-size: .6em;
+}
+
+table {
+	font-family: arial, sans-serif;
+	font-size: 0.5em;
+	border-collapse: collapse;
+	width: content-box;
+}
+
+td, th {
+	border: 1px solid #dddddd;
+	text-align: left;
+	padding: 8px;
+}
+
+img {
+	margin: 0.6em 0;
+
+	width: 80%;
+	max-width: 700px;
+	/*border: 1px groove white;*/
+	box-shadow: 6px 6px 6px black;
+
+}
+.imax{
+	text-align: center;
+	/*display: inline-block; /*Si hay problemas borralo*/
+}
+
+#imagina{text-align: center;}
