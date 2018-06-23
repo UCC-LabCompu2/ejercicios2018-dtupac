@@ -84,29 +84,108 @@
             </ol>
             <h6>Ejercicios</h6>
             <ol>
-                <li class="pregunta">Crear un archivo HTML, y en el "head" incluir el título, autor, descripción de la página y palabras principales.</li>
+                <li class="pregunta">Crear un archivo HTML, y en el &lt;head&gt; incluir el título, autor, descripción de la página y palabras principales.</li>
                 <pre class="language-markup">
                     <code>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="es"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="author" content="David Tupac Yupanqui Valentin"&gt;
+    &lt;meta name="description" content="Guia de Trabajos Practicos de Laboratorio de Computación II - UCC"&gt;
+    &lt;meta name="kewwords" content="git, html, canvas, app"&gt;
+	    &lt;title&gt;Mi Primera Pagina&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+	&lt;p&gt;¡Hola Mundo!&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;
                     </code>
                 </pre>
+                <li class="pregunta">Incluir en la página 3 secciones:</li>
+                <ol type="a">
+                    <li>En el &lt;header&gt; incluir una imagen y un título</li>
+                    <li>En &lt;section&gt; un texto con párrafos. Debe incluir la utilización de estilos (negrita, itálica y subrayado).</li>
+                    <li>El &lt;footer&gt; debe contener los autores de la página.</li>
+                    <p>A continucación el código HTML para los 3 puntos antes mencionados:</p>
+                    <pre class="language-markup">
+                        <code>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="es"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="author" content="David Tupac Yupanqui Valentin"&gt;
+    &lt;meta name="description" content="Guia de Trabajos Practicos de Laboratorio de Computación II - UCC"&gt;
+    &lt;meta name="kewwords" content="git, html, canvas, app"&gt;
+    &lt;title&gt;Mi Primera Pagina&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;style&gt;
+    *{border: 0; margin: 0;}
+    header{ text-align: center;}
+    img{width: 75px; margin: 20px;}
+    h1{display: inline-block; vertical-align:top; margin: 1.2em;}
+    footer{
+        background-color: black;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: content-box;
+        color: white;
+        text-align: center;
+    }
+    p{font-family: "Courier New",monospace; font-size: 1.2em; margin: 5px;}
+    #Italic{font-style: italic;color: red;}
+    .negro{font-weight:bold;}
+    #subralla{text-decoration:underline;}
+&lt;/style&gt;
+&lt;header&gt;
+    &lt;img src="img/UCCLogo3.png"&gt;
+    &lt;h1&gt;Universidad Católica de Córdoba - Facultad de Ingenería Electrónica&lt;/h1&gt;
+&lt;/header&gt;
+&lt;section&gt;
+    &lt;p&gt;
+        HTML5  es la última versión de HTML. El término representa dos conceptos diferentes:
+        Diseñado para ser utilizable por todos los desarrolladores de &lt;span class="negro" &gt;Open Web&lt;/span&gt;, esta página
+        referencía numerosos recursos sobre las tecnologías de HTML5, clasificados en varios
+        grupos según su función.
+    &lt;/p&gt;
+    &lt;p&gt;&lt;span id="Italic"&gt;Semántica:&lt;/span&gt; Permite describir con mayor precisión cual es su contenido.&lt;/p&gt;
+    &lt;p&gt;Para el &lt;ins&gt;subrrallado&lt;/ins&gt; debemos usar las siguiente etiqueta: &lt;span class="negro"&gt;&lt;ins&gt;&lt;/span&gt;&lt;/p&gt;
+    &lt;p&gt;O tambien podemos usar el &lt;span id="subralla"&gt;subrrallado&lt;/span&gt; con el estilo:
+        &lt;span class="negro"&gt;text-decoration:underline;&lt;/span&gt;&lt;/p&gt;
+&lt;/section&gt;
+&lt;footer&gt;
+    &lt;p&gt;Página realizada por David Tupac Yupanqui Valentin - Copyright® Todos los derechos reservados&lt;/p&gt;
+&lt;/footer&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+                        </code>
+                    </pre>
 
-                <li class="pregunta"></li>
+
+                </ol>
                 <p></p>
-                <li class="pregunta"></li>
+                <li class="pregunta">Crear otra página HTML con un párrafo de texto, e incluya listas ordenadas y no ordenadas. En la web principal incluir &lt;nav&gt; y un link a la web creada.</li>
                 <p></p>
-                <li class="pregunta"></li>
+                <li class="pregunta">Cree tablas con las siguientes estructuras: (utilice los atributos de colspan y rowspan de ser necesario).</li>
                 <p></p>
-                <li class="pregunta"></li>
+                <li class="pregunta">Agregue comentarios antes de cada tabla del ejercicio anterior.</li>
                 <p></p>
-                <li class="pregunta"></li>
+                <li class="pregunta">Cree una nueva página web con la siguiente estructura empleando &lt;input&gt;</li>
                 <p></p>
-                <li class="pregunta"></li>
+                <li class="pregunta">Crear una nueva página con la siguiente estructura</li>
+                <li class="pregunta">Empleando estilo en línea, modifique un párrafo para cambiar: </li>
+                <li class="pregunta">Diseñe la siguiente página, similar a un CV y agregue estilos empleando una hoja de estilo incrustada:</li>
+                <li class="pregunta">Cree una página web nueva. Emplee &gt;div&gt; con style para lograr que el estilo del texto quede en 2 columnas.</li>
+                <li class="pregunta">Modifique la página web del CV para que los estilos incrustados estén en un archivo de estilos. Asegúrese de por lo menos incluir un estilo por Tag, por ID y por clase.</li>
+                <li class="pregunta">Cree 2 listas no ordenadas y agregue estilos para visualizarla con círculos y con cuadrados. Cree 2 listas ordenadas y agregue estilos para visualizarla con números romanos y letras griegas. </li>
+                <li class="pregunta">Emplee una imagen para fondo de una página (image, attachment, blend-mode, clip, color, image, origin, position, repeat, size).</li>
             </ol>
 
         </article>
     </section>
 </section>
-
 <footer>
     <p>Página realizada por David Tupac Yupanqui Valentin - Copyright® Todos los derechos reservados</p>
 </footer>
