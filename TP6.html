@@ -162,7 +162,7 @@
 &lt;/html&gt;
                         </code>
                     </pre>
-                <p><a class="lnk_1" href="Ejercicios-JavaScript/Ejer_2-a-b-c.html" target="_blank">Hacer clic aqui para ver el resultado del código anterior.</a></p>
+                <p><a class="lnk_1" href="Ejercicios-JavaScript/Ejer_2-a-b-c_TP6.html" target="_blank">Click aqui para ver la página del código anterior.</a></p>
                 <p></p>
                 <p>A continuación otro código para el mismo ejercicio anterior:</p>
                     <pre class="language-markup">
@@ -203,6 +203,7 @@
 &lt;/html&gt;
                         </code>
                     </pre>
+                <p><a class="lnk_1" href="Ejercicios-JavaScript/Ejer_1_TP6-1merHTML.html" target="_blank">Click aqui para ver la página del código anterior.</a></p>
                 </ol>
                 <p></p>
                 <li class="pregunta">Crear otra página HTML con un párrafo de texto, e incluya listas ordenadas y no ordenadas. En la web principal incluir &lt;nav&gt; y un link a la web creada.</li>
@@ -234,9 +235,94 @@
 &lt;/html&gt;
                     </code>
                 </pre>
-                <p><a class="lnk_1" href="Ejercicios-JavaScript/Ejer_3_Listas.html" target="_blank">Hacer clic aqui para ver el resultado del código anterior.</a></p>
-                <p><a class="lnk_1" href="Ejercicios-JavaScript/1erHTML.html" target="_blank">Incluimos en la web principal el link dentro del tag &lt;nav&gt;</a></p>
+                <p><a class="lnk_1" href="Ejercicios-JavaScript/Ejer_3_TP6-Listas.html" target="_blank">Click aqui para ver la página del código anterior.</a></p>
+                <p><a class="lnk_1" href="Ejercicios-JavaScript/Ejer_1_TP6-1merHTML.html" target="_blank">Incluimos en la web principal el link dentro del tag &lt;nav&gt;</a></p>
                 <li class="pregunta">Cree tablas con las siguientes estructuras: (utilice los atributos de colspan y rowspan de ser necesario).</li>
+                <pre class="language-markup">
+                    <code>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="es"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;title&gt;Ejercio 4 - TP6 - Tablas&lt;/title&gt;
+    &lt;style&gt;
+        table, tr, th, td {border: 1px solid black}
+    &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;h2&gt;Tabla&lt;/h2&gt;
+&lt;table&gt;
+    &lt;tr&gt;
+        &lt;th&gt;Encabezado 1&lt;/th&gt;
+        &lt;th&gt;Encabezado 2&lt;/th&gt;
+        &lt;th&gt;Encabezado 3&lt;/th&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;Celda 1&lt;/td&gt;
+        &lt;td&gt;Celda 2&lt;/td&gt;
+        &lt;td&gt;Celda 3&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;Celda 4&lt;/td&gt;
+        &lt;td&gt;Celda 5&lt;/td&gt;
+        &lt;td&gt;Celda 6&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;Celda 7&lt;/td&gt;
+        &lt;td&gt;Celda 8&lt;/td&gt;
+        &lt;td&gt;Celda 9&lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;
+
+&lt;h2&gt;Tabla con Colspan&lt;/h2&gt;
+&lt;p&gt;Cuando se funcionan Columnas&lt;/p&gt;
+&lt;table&gt;
+    &lt;tr&gt;
+        &lt;th&gt;Encabezado 1&lt;/th&gt;
+        &lt;th&gt;Encabezado 2&lt;/th&gt;
+        &lt;th&gt;Encabezado 3&lt;/th&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td colspan="3"&gt;Celda 1, 2 y 3&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;Celda 4&lt;/td&gt;
+        &lt;td&gt;Celda 5&lt;/td&gt;
+        &lt;td&gt;Celda 6&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;Celda 7&lt;/td&gt;
+        &lt;td colspan="2"&gt;Celda 8 y 9&lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;
+
+&lt;h2&gt;Tabla con Rowspan&lt;/h2&gt;
+&lt;p&gt;Cuando se funcionan Filas&lt;/p&gt;
+&lt;table&gt;
+    &lt;tr&gt;
+        &lt;th&gt;Encabezado 1&lt;/th&gt;
+        &lt;th&gt;Encabezado 2&lt;/th&gt;
+        &lt;th&gt;Encabezado 3&lt;/th&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;Celda 1&lt;/td&gt;
+        &lt;td&gt;Celda 2&lt;/td&gt;
+        &lt;td rowspan="3"&gt;Celda 3, 6 y 9&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td rowspan="2"&gt;Celda 4 y 7&lt;/td&gt;
+        &lt;td&gt;Celda 5&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;Celda 8&lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+                    </code>
+                </pre>
+                <p><a class="lnk_1" href="Ejercicios-JavaScript/Ejer_4_TP6-Tablas.html" target="_blank">Click aqui para ver la página del código anterior.</a></p>
                 <p></p>
                 <li class="pregunta">Agregue comentarios antes de cada tabla del ejercicio anterior.</li>
                 <p></p>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercio 4 - TP6 - Tablas</title>
+    <style>
+        table, tr, th, td {border: 1px solid black}
+    </style>
+</head>
+<body>
+
+<h2>Tabla</h2>
+<table>
+    <tr>
+        <th>Encabezado 1</th>
+        <th>Encabezado 2</th>
+        <th>Encabezado 3</th>
+    </tr>
+    <tr>
+        <td>Celda 1</td>
+        <td>Celda 2</td>
+        <td>Celda 3</td>
+    </tr>
+    <tr>
+        <td>Celda 4</td>
+        <td>Celda 5</td>
+        <td>Celda 6</td>
+    </tr>
+    <tr>
+        <td>Celda 7</td>
+        <td>Celda 8</td>
+        <td>Celda 9</td>
+    </tr>
+</table>
+
+<h2>Tabla con Colspan</h2>
+<p>Cuando se funcionan Columnas</p>
+<table>
+    <tr>
+        <th>Encabezado 1</th>
+        <th>Encabezado 2</th>
+        <th>Encabezado 3</th>
+    </tr>
+    <tr>
+        <td colspan="3">Celda 1, 2 y 3</td>
+    </tr>
+    <tr>
+        <td>Celda 4</td>
+        <td>Celda 5</td>
+        <td>Celda 6</td>
+    </tr>
+    <tr>
+        <td>Celda 7</td>
+        <td colspan="2">Celda 8 y 9</td>
+    </tr>
+</table>
+
+<h2>Tabla con Rowspan</h2>
+<p>Cuando se funcionan Filas</p>
+<table>
+    <tr>
+        <th>Encabezado 1</th>
+        <th>Encabezado 2</th>
+        <th>Encabezado 3</th>
+    </tr>
+    <tr>
+        <td>Celda 1</td>
+        <td>Celda 2</td>
+        <td rowspan="3">Celda 3, 6 y 9</td>
+    </tr>
+    <tr>
+        <td rowspan="2">Celda 4 y 7</td>
+        <td>Celda 5</td>
+    </tr>
+    <tr>
+        <td>Celda 8</td>
+    </tr>
+</table>
+</body>
+</html>
