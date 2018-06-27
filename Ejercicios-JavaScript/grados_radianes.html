@@ -2,20 +2,20 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Conversor de Unidades</title>
+    <title>Grados a radianes</title>
     <link href="https://fonts.googleapis.com/css?family=Inknut+Antiqua" rel="stylesheet">
     <link href="miEstilo.css" type="text/css" rel="stylesheet">
+    <script type="text/javascript" src="misFunciones.js"></script>
 </head>
 <body class="body-num">
-
 <div class="centrado div-conver">
     <h1>Conversor de Unidades</h1>
     <form>
-        <p>
-            <label for="grados">Grados</label> = <input id="grados" type="text" name="unid_grados">
+        <p class="pp">
+            <label for="grados">Grados</label> = <input id="grados" type="text" name="unid_grados" onchange="conversion_grados_radianes(this.id, this.value)">
         </p>
-        <p>
-            <label for="radianes">Radianes</label> = <input id="radianes" type="text" name="unid_radianes">
+        <p class="pp">
+            <label for="radianes">Radianes</label> = <input id="radianes" type="text" name="unid_radianes" onchange="conversion_grados_radianes(this.id, this.value)">
         </p>
     </form>
 </div>

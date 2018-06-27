@@ -51,55 +51,854 @@
             <p>Este trabajo práctico corresponde a la unidad Nº: 7 de la programación de la asignatura.</p>
 
             <h6>Consignas a desarrollar en el trabajo práctico </h6>
-            <p></p>
+
+            <!-- Area de Preguntas Teóricas  -->
             <h6>Preguntas</h6>
             <ol>
-                <li class="pregunta"></li>
-                <p></p>
+                <!-- Pregunta Nº 1 -->
+                <li class="pregunta">¿Qué es la programación dirigida por eventos? De ejemplos de lenguajes orientados a eventos</li>
+                <p>La programación dirigida por eventos es un paradigma de programación en el que tanto la estructura
+                   como la ejecución de los programas van determinados por los sucesos que ocurran en el sistema,
+                   definidos por el usuario o que ellos mismos provoquen.</p>
+                <p>Algunos ejemplos de lenguajes orientados a eventos:</p>
                 <ul>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
+                    <li>JavaScript</li>
+                    <li>ActionScript</li>
+                    <li>Visual Basic</li>
+                    <li>C#</li>
+                    <li>Visual C#</li>
                 </ul>
-                <li class="pregunta"></li>
-                <p></p>
-                <li class="pregunta"></li>
-                <p></p>
-                <li class="pregunta"></li>
-                <p></p>
-                <li class="pregunta"></li>
-                <p></p>
-                <li class="pregunta"></li>
-                <p></p>
-                <li class="pregunta"></li>
-                <p></p>
-                <li class="pregunta"></li>
-                <p></p>
-                <li class="pregunta"></li>
-                <p></p>
-                <li class="pregunta"></li>
-                <p></p>
-            </ol>
-            <h6>Ejercicios</h6>
-            <ol>
-                <li class="pregunta"></li>
-                <p></p>
-                <li class="pregunta"></li>
-                <p></p>
-                <li class="pregunta"></li>
-                <p></p>
-                <li class="pregunta"></li>
-                <p></p>
-                <li class="pregunta"></li>
-                <p></p>
-                <li class="pregunta"></li>
-                <p></p>
-                <li class="pregunta"></li>
+
+                <!-- Pregunta Nº 2 -->
+                <li class="pregunta">¿Explique qué es un evento. ¿Qué tipos de eventos hay?</li>
+                <p>Un <b>evento</b> es todo aquello que puede ser detectado y que pueda producir una reacción.
+                    Ej. Hacer click en un botón, mover el puntero sobre un enlace, seleccionar un elemento de una lista desplegable, etc.</p>
+                <p>Algunos tipos de eventos pueden ser:</p>
+                <ul>
+                    <li>Eventos de Usuario</li>
+                    <ul>
+                        <li>Eventos del mouse</li>
+                        <li>Eventos del teclado</li>
+                    </ul>
+                    <li>Eventos del navegador</li>
+                    <ul>
+                        <li>Manipulación de las ventanas del navegador</li>
+                        <li>Comunicación con el servidor</li>
+                    </ul>
+                    <li>Eventos generados desde el código</li>
+                    <ul>
+                        <li>Cambios en el contenido, aspecto o estrucctura.</li>
+                        <li>Especificación DOM</li>
+                        <p><b>DOM</b> (Document Object Model): El modelo de objeto de documento (DOM)
+                        es una interfaz de programación para los documentos HTML y XML.
+                        Facilita una representación estructurada del documento y define de qué manera los programas pueden acceder,
+                        al fin de modificar, tanto su estructura, estilo y contenido.</p>
+                    </ul>
+                    <li>Eventos de enfoque.</li>
+                </ul>
+
+                <!-- Pregunta Nº 3 -->
+                <li class="pregunta">¿Qué es el event handler?</li>
+                <p>El manejador de eventos contiene instrucciones acerca de que hacer cuando una clase particular de evento se dispara.</p>
+
+                <!-- Pregunta Nº 4 -->
+                <li class="pregunta">¿Qué es JavaScript? ¿Qué características tiene?</li>
+                <p>Es un lenguaje de scripting multiplataforma y orientado a objetos. Se usa principalmente del lado del cliente implementado
+                    como parte de un navegador web permitiendo mejoras en la interfaz de usuario y páginas web dinámicas.</p>
+                <p>Características:</p>
+                <ul>
+                    <li>Orientado a objetos.</li>
+                    <li>Lenguaje Interpretado.</li>
+                    <li>Tipado dinámico.</li>
+                </ul>
+
+                <!-- Pregunta Nº 5 -->
+                <li class="pregunta">¿Qué paradigma de programación es JavaScript?</li>
+                <p>JavaScript es un lenguaje multiparadigma, lo que significa que se puede programar con distintos estilos (paradigmas).
+                    Incluso podemos usar más de uno en un mismo proyecto según nuestras necesidades.</p>
+                <p>Los principales paradigmas:</p>
+                <ul>
+                    <li>Orientada a Objetos</li>
+                    <li>Programación funcional</li>
+                    <li>Programación basada en prototipos</li>
+                    <li>Imperativo</li>
+                    <li>Interpretado (scripting)</li>
+                </ul>
+
+                <!-- Pregunta Nº 6 -->
+                <li class="pregunta">¿Qué herramientas permiten debuguear Javascript?</li>
+                <p>Las herramientas de desarrollo de los navegadores cada vez son más potentes y van mejorando día a día.
+                    El primer gran <i>debugger</i> de JavaScript fue <b>Firebug</b> para Firefox, que hace unos 4 o 5 años no tenía ni la más mínima competencia,
+                    pero actualmente tenemos las herramientas de desarrollo de <b>Chrome</b> y las de <b>Internet Explorer</b>
+                    (que han mejorado mucho en su versión número 11) como buena y completa competencia.
+                    Las <b>APIs</b> de la consola han evolucionado y encontramos cosas tan interesantes como tablas de datos en la consola,
+                    algo que ayuda mucho a visualizar, sobre todo, respuestas por parte de un servidor.</p>
             </ol>
 
+            <!-- Area de Ejercicios Prácticos  -->
+            <h6>Ejercicios</h6>
+            <ol>
+                <!-- Ejercicio Nº 1 -->
+                <li class="pregunta">Mostrar un “alert” con el texto “Hola Mundo!” que se ejecute en el onload del body.</li>
+                <pre class="language-markup">
+                    <code>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;title&gt;Hola Mundo&lt;/title&gt;
+&lt;/head&gt;
+&lt;body onload="alert('Hola Mundo')"&gt;
+&lt;h1&gt;Ejercicio Nº 1&lt;/h1&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+                    </code>
+                </pre>
+                <p><a class="lnk_1" href="Ejercicios-JavaScript/Hola_Mundo.html" target="_blank">Click aqui para ver la página del código anterior.</a></p>
+                <!-- Ejercicio Nº 2 -->
+                <li class="pregunta">Empleando la página web diseñada en la unidad anterior, escribir una función/funciones JavaScript para que: </li>
+                <ol type="a">
+                    <!-- Punto (a) -->
+                    <li>Al escribir un número en cualquiera de los inputs, la unidad sea convertida. </li>
+
+                    <!-- Punto (b) -->
+                    <li>Si el valor ingresado no es numérico, muestre un mensaje de error al usuario y blanquee los campos. </li>
+
+                    <!-- Punto (c) -->
+                    <li>Si el usuario ingresa una ‘,’ la reemplace por un ‘.’ </li>
+                </ol>
+                <p>Desarrollamos los puntos (a), (b) y (c) en el siguiente código:</p>
+                <p><b><u>HTML:</u></b></p>
+                <pre class="language-markup">
+                    <code>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="es"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;title&gt;Conversor de Unidades&lt;/title&gt;
+    &lt;link href="https://fonts.googleapis.com/css?family=Inknut+Antiqua" rel="stylesheet"&gt;
+    &lt;link href="miEstilo.css" type="text/css" rel="stylesheet"&gt;
+    &lt;script type="text/javascript" src="misFunciones.js"&gt;&lt;/script&gt;
+&lt;/head&gt;
+&lt;body class="body-num"&gt;
+
+&lt;div class="centrado div-conver"&gt;
+    &lt;h1&gt;Conversor de Unidades&lt;/h1&gt;
+    &lt;form&gt;
+        &lt;p class="pp"&gt;
+            &lt;label class="lbel" for="metro"&gt;Metro&lt;/label&gt; = &lt;input id="metro" type="text" name="unid_metro" onchange="conversordeunidades(this.id, this.value)"&gt;
+        &lt;/p&gt;
+        &lt;p class="pp"&gt;
+            &lt;label class="lbel" for="pulgada"&gt;Pulgada&lt;/label&gt; = &lt;input id="pulgada" type="text" name="unid_pulgada" onchange="conversordeunidades(this.id, this.value)"&gt;
+        &lt;/p&gt;
+        &lt;p class="pp"&gt;
+            &lt;label class="lbel" for="pie"&gt;Pie&lt;/label&gt; = &lt;input id="pie" type="text" name="unid_pie" onchange="conversordeunidades(this.id, this.value)"&gt;
+        &lt;/p&gt;
+        &lt;p class="pp"&gt;
+            &lt;label class="lbel" for="yarda"&gt;Yarda&lt;/label&gt; = &lt;input id="yarda" type="text" name="unid_yarda" onchange="conversordeunidades(this.id, this.value)"&gt;
+        &lt;/p&gt;
+    &lt;/form&gt;
+&lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+                    </code>
+                </pre>
+                <p><a class="lnk_1" href="Ejercicios-JavaScript/ConversorUnidades.html" target="_blank">Click aqui para ver la página del código anterior.</a></p>
+
+                <!-- Ejercicio Nº 3 -->
+                <li class="pregunta">Documentar las funciones del “Conversor de Unidades” adecuadamente, indicando que hacen las funciones, el nombre del método,
+                    que parámetros se le envía y que valor retorna.</li>
+                <p><b><u>JS:</u></b> del html anterior, comentado:</p>
+                <pre class="language-js">
+                    <code>
+/**
+ * Esta es la funcion Conversión de unidades
+ * @method conversordeunidades
+ * @param nombre_unidad
+ * @param valor_unidad
+ * @return Valor que retorna
+ */
+function conversordeunidades(nombre_unidad, valor_unidad) {
+    var metro, pie, pulgada, yarda;
+    valor_unidad = valor_unidad.replace(",", ".");
+
+    if(isNaN(valor_unidad)){
+        alert("Por favor ingresa un valor numérico, gracias!");
+        document.getElementById("metro").value = "";
+        document.getElementById("pie").value = "";
+        document.getElementById("pulgada").value = "";
+        document.getElementById("yarda").value = "";
+    }
+    else{
+        if (nombre_unidad == 'metro'){
+            pie = valor_unidad*3.28084;
+            pulgada = valor_unidad*39.3701;
+            yarda = valor_unidad*1.09361;
+            metro = valor_unidad;
+        }
+        if (nombre_unidad == 'pie'){
+            pie = valor_unidad;
+            metro = valor_unidad/3.28084;
+            pulgada = metro*39.3701;
+            yarda = metro*1.09361;
+        }
+        if (nombre_unidad == 'pulgada'){
+            pulgada = valor_unidad;
+            metro = valor_unidad/39.3701;
+            pie = metro*3.28084;
+            yarda = metro*1.09361;
+        }
+        if (nombre_unidad == 'yarda'){
+            yarda = valor_unidad;
+            pie = valor_unidad*3.28084;
+            pulgada = valor_unidad*39.3701;
+            metro = valor_unidad/1.09361;
+        }
+        document.getElementById("pie").value = pie;
+        document.getElementById("pulgada").value = pulgada;
+        document.getElementById("yarda").value = yarda;
+        document.getElementById("metro").value = metro;
+    }
+}
+                    </code>
+                </pre>
+
+                <!-- Ejercicio Nº 4 -->
+                <li class="pregunta">Cree una web con 2 inputs para convertir de grados a radianes. Recuerde que <i>180<sup>𝑜</sup> = 𝜋 𝑟𝑎𝑑</i>.</li>
+                <p><b><u>HTML:</u></b></p>
+                <pre class="language-markup">
+                    <code>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="es"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;title&gt;Grados a radianes&lt;/title&gt;
+    &lt;link href="https://fonts.googleapis.com/css?family=Inknut+Antiqua" rel="stylesheet"&gt;
+    &lt;link href="miEstilo.css" type="text/css" rel="stylesheet"&gt;
+    &lt;script type="text/javascript" src="misFunciones.js"&gt;&lt;/script&gt;
+&lt;/head&gt;
+&lt;body class="body-num"&gt;
+&lt;div class="centrado div-conver"&gt;
+    &lt;h1&gt;Conversor de Unidades&lt;/h1&gt;
+    &lt;form&gt;
+        &lt;p&gt;
+            &lt;label for="grados"&gt;Grados&lt;/label&gt; = &lt;input id="grados" type="text" name="unid_grados" onchange="conversion_grados_radianes(this.id, this.value)"&gt;
+        &lt;/p&gt;
+        &lt;p&gt;
+            &lt;label for="radianes"&gt;Radianes&lt;/label&gt; = &lt;input id="radianes" type="text" name="unid_radianes" onchange="conversion_grados_radianes(this.id, this.value)"&gt;
+        &lt;/p&gt;
+    &lt;/form&gt;
+&lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+                    </code>
+                </pre>
+                <p><b><u>JS:</u></b> del html anterior, comentado:</p>
+                <pre class="language-js">
+                    <code>
+/**
+ * Esta es la funcion Conversion de Grados a Radianes y viceversa
+ * @method conversion_grados_radianes
+ * @param nombre_unidad
+ * @param valor_unidad
+ * @return Valor que retorna
+ */
+function conversion_grados_radianes(nombre_unidad, valor_unidad){
+    var varRadianes, varGrados;
+    valor_unidad = valor_unidad.replace(",", ".");
+    if(isNaN(valor_unidad)){
+        alert("Por favor ingresa un valor numérico, gracias!");
+        document.getElementsByTagName("input")[0].value = "";
+        document.getElementsByTagName("input")[1].value = "";
+    }
+    else {
+        if (nombre_unidad == 'grados') {
+            varGrados = valor_unidad;
+            varRadianes = Math.PI / 180 * valor_unidad;
+        }
+        if (nombre_unidad == 'radianes') {
+            varRadianes = valor_unidad;
+            varGrados = 180 / Math.PI * valor_unidad;
+        }
+        document.getElementsByTagName("input")[0].value = varGrados;
+        document.getElementsByTagName("input")[1].value = varRadianes;
+    }
+}
+                    </code>
+                </pre>
+                <p><a class="lnk_1" href="Ejercicios-JavaScript/grados_radianes.html" target="_blank">Click aqui para ver la página del código anterior.</a></p>
+
+                <!-- Ejercicio Nº 5 -->
+                <li class="pregunta">Empleando la página web diseñada en la unidad anterior, escribir una función JavaScript para mostrar u ocultar el div celeste.</li>
+                <p><b><u>HTML:</u></b></p>
+                <pre class="language-markup">
+                    <code>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;title&gt;Mostrar/Ocultar Div&lt;/title&gt;
+    &lt;link href="https://fonts.googleapis.com/css?family=Inknut+Antiqua" rel="stylesheet"&gt;
+    &lt;link href="miEstilo.css" type="text/css" rel="stylesheet"&gt;
+    &lt;script type="text/javascript" src="misFunciones.js"&gt;&lt;/script&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;h1&gt; Mostrar/Ocultar Div &lt;/h1&gt;
+&lt;form&gt;
+    &lt;!--Es importante que los 2 radio button tengan el mismo name, porque eso les hace pertener a un mismo grupo--&gt;
+    &lt;!--Si un radio button se selecciona, el otro se deselecciona--&gt;
+    &lt;p&gt;
+        &lt;input id="mostrarDiv" type="radio" name="rad_mostrar-ocultar" value="val_mostrar" onclick="mostrar_ocultar(this.id)" checked&gt;
+        &lt;label for="mostrarDiv"&gt; Mostrar Div &lt;/label&gt;
+    &lt;/p&gt;
+    &lt;p&gt;
+        &lt;input id="ocultarDiv" type="radio" name="rad_mostrar-ocultar" value="val_ocultar" onclick="mostrar_ocultar(this.id)"&gt;
+        &lt;label for="ocultarDiv"&gt; Ocultar Div &lt;/label&gt;
+    &lt;/p&gt;
+&lt;/form&gt;
+&lt;div name="unDiv" class="color-div"&gt;
+    &lt;p&gt;Este DIV contiene información que en ciertas ocasiones se desea ocultar.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+                    </code>
+                </pre>
+                <p><b><u>JS:</u></b> del html anterior, comentado:</p>
+                <pre class="language-js">
+                    <code>
+/**
+ * Esta es la funcion muestra u oculta un DIV
+ * @method mostrar_ocultar
+ * @param opcion
+ * @return Valor que retorna
+ */
+function mostrar_ocultar(opcion) {
+    if (opcion == 'mostrarDiv'){
+        document.getElementsByName("unDiv")[0].style.display = 'block';
+    }
+    if (opcion == 'ocultarDiv'){
+        document.getElementsByName("unDiv")[0].style.display = 'none';
+    }
+}
+                    </code>
+                </pre>
+                <p><a class="lnk_1" href="Ejercicios-JavaScript/mostrar_ocultar.html" target="_blank">Click aqui para ver la página del código anterior.</a></p>
+
+                <!-- Ejercicio Nº 6 -->
+                <li class="pregunta">Empleando el template de página web existente en el repositorio sobre “operadores matemáticas”, escribir funciones
+                    JavaScript para resolver las operaciones matemáticas una vez que el usuario ingresa un valor numérico en ambos inputs. Tener en cuenta: </li>
+                <ol type="a">
+                    <!-- Punto (a) -->
+                    <li>El valor del resultado no debe poder ser modificado por el usuario.</li>
+
+                    <!-- Punto (b) -->
+                    <li>Asegúrese de castear los valores de ser necesario.</li>
+                </ol>
+                <p><b><u>HTML:</u></b></p>
+                <pre class="language-markup">
+                    <code>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="es"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;title&gt;Operaciones Matemáticas&lt;/title&gt;
+    &lt;link href="https://fonts.googleapis.com/css?family=Inknut+Antiqua" rel="stylesheet"&gt;
+    &lt;link href="miEstilo.css" type="text/css" rel="stylesheet"&gt;
+    &lt;script type="text/javascript" src="misFunciones.js"&gt;&lt;/script&gt;
+&lt;/head&gt;
+&lt;body class="body-num"&gt;
+
+&lt;div class="centrado div-conver"&gt;
+    &lt;h1&gt;Operaciones Matemáticas&lt;/h1&gt;
+    &lt;form class="operacionesMat"&gt;
+        &lt;p&gt;
+            &lt;input id="nums1" type="text" name="sum_num1" onchange="Sumar();"&gt;
+            &lt;b&gt;&#43;&lt;/b&gt;
+            &lt;input id="nums2" type="text" name="sum_num2" onchange="Sumar();"&gt;
+            &lt;b&gt;&#61;&lt;/b&gt;
+            &lt;input id="totalS" type="text" name="sum_total" readonly&gt;
+        &lt;/p&gt;
+        &lt;p&gt;
+            &lt;input id="numr1" type="text" name="res_num1" onchange="Restar();"&gt;
+            &lt;b&gt;&#45;&lt;/b&gt;
+            &lt;input id="numr2" type="text" name="res_num2" onchange="Restar();"&gt;
+            &lt;b&gt;&#61;&lt;/b&gt;
+            &lt;input id="totalR" type="text" name="res_total" readonly&gt;
+        &lt;/p&gt;
+        &lt;p&gt;
+            &lt;input id="numm1" type="text" name="mul_num1" onchange="Multiplicar();"&gt;
+            &lt;b&gt;&#215;&lt;/b&gt;
+            &lt;input id="numm2" type="text" name="mul_num2" onchange="Multiplicar();"&gt;
+            &lt;b&gt;&#61;&lt;/b&gt;
+            &lt;input id="totalM" type="text" name="mul_total" readonly&gt;
+        &lt;/p&gt;
+        &lt;p&gt;
+            &lt;input id="numd1" type="text" name="div_num1" onchange="Dividir();"&gt;
+            &lt;b&gt;&#247;&lt;/b&gt;
+            &lt;input id="numd2" type="text" name="div_num2" onchange="Dividir();"&gt;
+            &lt;b&gt;&#61;&lt;/b&gt;
+            &lt;input id="totalD" type="text" name="div_total" readonly&gt;
+        &lt;/p&gt;
+    &lt;/form&gt;
+&lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+                    </code>
+                </pre>
+                <p><b><u>JS:</u></b> del html anterior, comentado:</p>
+                <pre class="language-js">
+                    <code>
+/**
+ * Esta es la funcion que Suma 2 numeros reales
+ * @method Sumar
+ * @param nums1
+ * @param nums2
+ * @return Valor que retorna
+ */
+function Sumar(){
+    var num1 = document.getElementById('nums1');
+    var num2 = document.getElementById('nums2');
+    var resultado;
+    if(!isNaN(num1.value) && !isNaN(num2.value) && (typeof num1.value !== undefined && typeof num2.value !== undefined)){
+        resultado = parseFloat(num1.value) + parseFloat(num2.value);
+        document.getElementById('totalS').value = resultado;
+    }else{
+        alert("Por favor ingresa un valor numérico, gracias!");
+        document.getElementById('nums1').value = "";
+        document.getElementById('nums2').value = "";
+    }
+}
+
+/**
+ * Esta es la funcion que resta 2 numeros reales
+ * @method Restar
+ * @param nums1
+ * @param nums2
+ * @return Valor que retorna
+ */
+function Restar(){
+    var num1 = document.getElementById('numr1');
+    var num2 = document.getElementById('numr2');
+    var resultado;
+    if(!isNaN(num1.value) && !isNaN(num2.value) && (typeof num1.value !== undefined && typeof num2.value !== undefined)){
+        resultado = parseFloat(num1.value) - parseFloat(num2.value);
+        document.getElementById('totalR').value = resultado;
+    }else{
+        alert("Los valores ingresados deben ser validos");
+        document.getElementById('numr1').value = "";
+        document.getElementById('numr2').value = "";
+    }
+}
+
+/**
+ * Esta es la funcion que Multiplica 2 numeros reales
+ * @method Multiplicar
+ * @param nums1
+ * @param nums2
+ * @return Valor que retorna
+ */
+function Multiplicar(){
+    var num1 = document.getElementById('numm1');
+    var num2 = document.getElementById('numm2');
+    var resultado;
+    if(!isNaN(num1.value) && !isNaN(num2.value) && (typeof num1.value !== undefined && typeof num2.value !== undefined)){
+        resultado = parseFloat(num1.value) * parseFloat(num2.value);
+        document.getElementById('totalM').value = resultado;
+    }else{
+        alert("Los valores ingresados deben ser validos");
+        document.getElementById('numm1').value = "";
+        document.getElementById('numm2').value = "";
+    }
+}
+
+/**
+ * Esta es la funcion que Divide 2 numeros reales
+ * @method Dividir
+ * @param nums1
+ * @param nums2
+ * @return Valor que retorna
+ */
+function Dividir(){
+    var num1 = document.getElementById('numd1');
+    var num2 = document.getElementById('numd2');
+    var resultado;
+    if(!isNaN(num1.value) && !isNaN(num2.value) && (typeof num1.value !== undefined && typeof num2.value !== undefined) && num2.value != 0){
+        resultado = parseFloat(num1.value) / parseFloat(num2.value);
+        document.getElementById('totalD').value = resultado;
+    }else {
+        if(num2.value == 0 && !isNaN(num1.value)){
+            document.getElementById('numd2').focus();
+            alert("El segundo numero tiene que ser distinto de 0");
+        }
+        else {
+            alert("Los valores ingresados deben ser validos");
+            document.getElementById('numd1').value = "";
+            document.getElementById('numd2').value = "";
+        }
+    }
+}
+                    </code>
+                </pre>
+                <p><a class="lnk_1" href="Ejercicios-JavaScript/operacionesMatematicas.html" target="_blank">Click aqui para ver la página del código anterior.</a></p>
+
+                <!-- Ejercicio Nº 7 -->
+                <li class="pregunta">Empleando el ejercicio de “Convertidor de Unidades”, modificar las funciones de manera tal que el resultado
+                    de la conversión sólo posea 2 decimales. (Emplear Math.Round)</li>
+                <p><b><u>HTML:</u> agregamos en el &lt;head&gt; del html anterior:</b></p>
+                <pre class="language-markup">
+                    <code>
+&lt;script type="text/javascript" src="redondeDecimal.js"&gt;&lt;/script&gt;
+                    </code>
+                </pre>
+                <p><b><u>JS:</u></b></p>
+                <pre class="language-js">
+                    <code>
+/**
+ * Esta es la funcion que Suma 2 numeros reales
+ * @method Sumar
+ * @param nums1
+ * @param nums2
+ * @return Valor que retorna
+ */
+function Sumar(){
+    var num1 = document.getElementById('nums1');
+    var num2 = document.getElementById('nums2');
+    var resultado;
+    if(!isNaN(num1.value) && !isNaN(num2.value) && (typeof num1.value !== undefined && typeof num2.value !== undefined)){
+        resultado = parseFloat(num1.value) + parseFloat(num2.value);
+        document.getElementById('totalS').value = Math.round10(resultado, -2);
+    }else{
+        alert("Por favor ingresa un valor numérico, gracias!");
+        document.getElementById('nums1').value = "";
+        document.getElementById('nums2').value = "";
+    }
+}
+
+/**
+ * Esta es la funcion que resta 2 numeros reales
+ * @method Restar
+ * @param nums1
+ * @param nums2
+ * @return Valor que retorna
+ */
+function Restar(){
+    var num1 = document.getElementById('numr1');
+    var num2 = document.getElementById('numr2');
+    var resultado;
+    if(!isNaN(num1.value) && !isNaN(num2.value) && (typeof num1.value !== undefined && typeof num2.value !== undefined)){
+        resultado = parseFloat(num1.value) - parseFloat(num2.value);
+        document.getElementById('totalR').value = Math.round10(resultado, -2);
+    }else{
+        alert("Los valores ingresados deben ser validos");
+        document.getElementById('numr1').value = "";
+        document.getElementById('numr2').value = "";
+    }
+}
+
+/**
+ * Esta es la funcion que Multiplica 2 numeros reales
+ * @method Multiplicar
+ * @param nums1
+ * @param nums2
+ * @return Valor que retorna
+ */
+function Multiplicar(){
+    var num1 = document.getElementById('numm1');
+    var num2 = document.getElementById('numm2');
+    var resultado;
+    if(!isNaN(num1.value) && !isNaN(num2.value) && (typeof num1.value !== undefined && typeof num2.value !== undefined)){
+        resultado = parseFloat(num1.value) * parseFloat(num2.value);
+        document.getElementById('totalM').value = Math.round10(resultado, -2);
+    }else{
+        alert("Los valores ingresados deben ser validos");
+        document.getElementById('numm1').value = "";
+        document.getElementById('numm2').value = "";
+    }
+}
+
+/**
+ * Esta es la funcion que Divide 2 numeros reales
+ * @method Dividir
+ * @param nums1
+ * @param nums2
+ * @return Valor que retorna
+ */
+function Dividir(){
+    var num1 = document.getElementById('numd1');
+    var num2 = document.getElementById('numd2');
+    var resultado;
+    if(!isNaN(num1.value) && !isNaN(num2.value) && (typeof num1.value !== undefined && typeof num2.value !== undefined) && num2.value != 0){
+        resultado = parseFloat(num1.value) / parseFloat(num2.value);
+        document.getElementById('totalD').value = Math.round10(resultado, -2);
+    }else {
+        if(num2.value == 0 && !isNaN(num1.value)){
+            document.getElementById('numd2').focus();
+            alert("El segundo numero tiene que ser distinto de 0");
+        }
+        else {
+            alert("Los valores ingresados deben ser validos");
+            document.getElementById('numd1').value = "";
+            document.getElementById('numd2').value = "";
+        }
+    }
+}
+                    </code>
+                </pre>
+                <p><a class="lnk_1" href="Ejercicios-JavaScript/operacionesMatematicas.html" target="_blank">Click aqui para ver la página del código anterior.</a></p>
+
+                <!-- Ejercicio Nº 8 -->
+                <li class="pregunta">Empleando el ejercicio de “Convertidor de Unidades”, modifique el HTML para quitar los inputs de los resultados,
+                    y emplear div, y en JavaScript, emplee innerHTML. </li>
+
+                <!-- Ejercicio Nº 9 -->
+                <li class="pregunta">Crear 2 páginas webs. En la primera, incluir un input para ingresar distancia, un selector para seleccionar
+                    la unidad y un botón para ir a la segunda página.</li>
+                <p>En la segunda página ingresar un texto con un input para completar con los valores anteriormente ingresados.</p>
+                <p>Crear una función JavaScript que sea ejecutada cuando el botón sea presionado. La función debe concatenar el nombre de la segunda
+                    web con los valores ingresados por el usuario, separados por ‘#’ y dirigirse a la segunda web. </p>
+                <p>Crear una función JavaScript que se ejecute cuando la segunda web sea cargada. Debe tomar el valor de la URL y dividirla cada vez
+                    que ‘#’ sea encontrado. Debe emplear estos valores y cargarlos en el input. </p>
+
+                <!-- Ejercicio Nº 10 -->
+                <li class="pregunta">Implemente una función javascript que dibuje un círculo y un cuadrado en un canvas. Llamarla al cargar la página</li>
+                <p><b><u>HTML:</u></b></p>
+                <pre class="language-markup">
+                    <code>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;title&gt;Canvas con Circulo y Cuadrado&lt;/title&gt;
+    &lt;link href="https://fonts.googleapis.com/css?family=Inknut+Antiqua" rel="stylesheet"&gt;
+    &lt;link href="miEstilo.css" type="text/css" rel="stylesheet"&gt;
+    &lt;script type="text/javascript" src="misFunciones.js"&gt;&lt;/script&gt;
+&lt;/head&gt;
+
+&lt;body onload="dibujar_circulo_cuadrado()"&gt;
+&lt;h1&gt;Canvas 1&lt;/h1&gt;
+&lt;p&gt;Ejercicio: Dibujar un Circulo y un cuadrado en una página. La función debe llamarse al cargar la página&lt;/p&gt;
+&lt;canvas id="myCanvas" class="ejer" width="400" height="400"&gt;
+    Tu navegador no soporta el tag de HTML5 canvas.
+&lt;/canvas&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+                    </code>
+                </pre>
+                <p><b><u>JS:</u></b></p>
+                <pre class="language-js">
+                    <code>
+/**
+ * Esta es la función dibuja un Círculo y un Cuadrado en Canvas
+ * @method dibujar_circulo_cuadrado
+ * @return Valor que retorna
+ */
+function dibujar_circulo_cuadrado(){
+
+    var canvas = document.getElementById("myCanvas");
+    var ctx = canvas.getContext("2d");
+
+    ctx.beginPath();
+    ctx.arc(100,75,40,0,2*Math.PI);
+    ctx.stroke();
+
+    ctx.beginPath();
+    ctx.rect(150,75,150,100);
+    ctx.stroke();
+}
+                    </code>
+                </pre>
+                <p><a class="lnk_1" href="Ejercicios-JavaScript/canvas_circulo-cuadrado.html" target="_blank">Click aqui para ver la página del código anterior.</a></p>
+
+                <!-- Ejercicio Nº 11 -->
+                <li class="pregunta">Implemente una función javascript que dibuje un cuadriculado en un canvas. Llamarla desde un botón en la página. </li>
+                <p><b><u>HTML:</u></b></p>
+                <pre class="language-markup">
+                    <code>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;title&gt;Canvas con Circulo y Cuadrado&lt;/title&gt;
+    &lt;link href="https://fonts.googleapis.com/css?family=Inknut+Antiqua" rel="stylesheet"&gt;
+    &lt;link href="miEstilo.css" type="text/css" rel="stylesheet"&gt;
+    &lt;script type="text/javascript" src="misFunciones.js"&gt;&lt;/script&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+&lt;h1&gt;Canvas 2&lt;/h1&gt;
+&lt;p&gt;Ejercicio: Dibujar un cuadriculado en un canvas. La función debe llamarse al presionar el boton.&lt;/p&gt;
+&lt;button onclick="dibujar_cuadriculado();"&gt;
+    Dibujar Cuadriculado
+&lt;/button&gt;
+&lt;canvas id="myCanvas" class="ejer" width="400" height="400"&gt;
+    Tu navegador no soporta el tag de HTML5 canvas.
+&lt;/canvas&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+                    </code>
+                </pre>
+                <p><b><u>JS:</u></b></p>
+                <pre class="language-js">
+                    <code>
+/**
+ * Esta es la función dibuja una Cuadrícula en Canvas
+ * @method dibujar_cuadriculado
+ * @return Valor que retorna
+ */
+function dibujar_cuadriculado(){
+    var canvas = document.getElementById("myCanvas");
+    var ctx = canvas.getContext("2d");
+
+    var w = canvas.width;
+    var h = canvas.height;
+
+    //Lineas horizontales
+    ctx.beginPath();
+    ctx.lineWidth = 1;
+    for(var i = 0; i < h; i += 20){
+        ctx.moveTo(0, 10 + i);
+        ctx.lineTo(w, 10 + i);
+        ctx.stroke();
+    }
+    ctx.closePath();
+
+    //Lineas verticales
+    ctx.beginPath();
+    ctx.lineWidth = 1;
+    for(var i = 0; i < w; i += 20){
+        ctx.moveTo(10 + i, 0);
+        ctx.lineTo(10 + i, h);
+        ctx.stroke();
+    }
+    ctx.closePath();
+}
+                    </code>
+                </pre>
+                <p><a class="lnk_1" href="Ejercicios-JavaScript/canvas_cuadriculado.html" target="_blank">Click aqui para ver la página del código anterior.</a></p>
+
+                <!-- Ejercicio Nº 12 -->
+                <li class="pregunta">Implemente una función que tenga como parámetro dos valores, X e Y, que dibuje una imagen en un canvas desde
+                    la posición pasada por parámetro. La página debe contener dos inputs donde el usuario ingresa los valores X e Y,
+                    y un botón “Dibujar” desde donde se llama a la función. </li>
+                <p><b><u>HTML:</u></b></p>
+                <pre class="language-markup">
+                    <code>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="es"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;title&gt;Canvas con Circulo y Cuadrado&lt;/title&gt;
+    &lt;link href="https://fonts.googleapis.com/css?family=Inknut+Antiqua" rel="stylesheet"&gt;
+    &lt;link href="miEstilo.css" type="text/css" rel="stylesheet"&gt;
+    &lt;script type="text/javascript" src="misFunciones.js"&gt;&lt;/script&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;h1&gt;Canvas 3&lt;/h1&gt;
+&lt;p&gt;Ejercicio: Dibujar  la imagen 'auto.png' en el canvas desde la posición pasada por parámetro. La función debe llamarse al presionar el boton.&lt;/p&gt;
+
+&lt;div class="centrado div-conver"&gt;
+    &lt;form&gt;
+        &lt;p&gt;
+            &lt;label for="posicionX"&gt; X&lt;/label&gt; = &lt;input id="posicionX" type="number" name="inp_x"&gt;
+        &lt;/p&gt;
+        &lt;p&gt;
+            &lt;label for="posicionY"&gt; Y&lt;/label&gt; = &lt;input id="posicionY" type="number" name="inp_y"&gt;
+        &lt;/p&gt;
+        &lt;button onclick="dibujar_auto();return false;"&gt;
+            Dibujar!
+        &lt;/button&gt;
+    &lt;/form&gt;
+&lt;/div&gt;
+&lt;canvas id="myCanvas" class="autito" width="400" height="400"&gt;
+    Tu navegador no soporta el tag de HTML5 canvas.
+&lt;/canvas&gt;
+&lt;/body&gt;
+                    </code>
+                </pre>
+                <p><b><u>JS:</u></b></p>
+                <pre class="language-js">
+                    <code>
+/**
+ * Esta es la funcion traslada una imagen a un punto determinado ingresado por el usuario
+ * @method dibujar_auto
+ * @param posicionX
+ * @param posicionY
+ * @return Valor que retorna
+ */
+function dibujar_auto(){
+    var x = document.getElementById('posicionX').value;
+    var y = document.getElementById('posicionY').value;
+    var canvas = document.getElementById("myCanvas");
+    var ctx = canvas.getContext("2d");
+    var w = canvas.width;
+    var h = canvas.height;
+
+    auto = new Image();
+    auto.src = 'images/auto.png';
+    auto.onload = function(){
+        ctx.clearRect(0,0,w,h);
+        ctx.drawImage(auto, x, y);
+    }
+}
+                    </code>
+                </pre>
+                <p><a class="lnk_1" href="Ejercicios-JavaScript/canvas_x-y.html" target="_blank">Click aqui para ver la página del código anterior.</a></p>
+
+                <!-- Ejercicio Nº 13 -->
+                <li class="pregunta">13)	Utilizando la función anterior que dibujaba imágenes y la función setTimeOut() de javascript,
+                    realice una animación que mueva la imagen desde el borde izquierdo al derecho del canvas.</li>
+                <p><b><u>HTML:</u></b></p>
+                <pre class="language-markup">
+                    <code>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="es"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;title&gt;Canvas con Circulo y Cuadrado&lt;/title&gt;
+    &lt;link href="https://fonts.googleapis.com/css?family=Inknut+Antiqua" rel="stylesheet"&gt;
+    &lt;link href="miEstilo.css" type="text/css" rel="stylesheet"&gt;
+    &lt;script type="text/javascript" src="misFunciones.js"&gt;&lt;/script&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;h1&gt;Canvas 3&lt;/h1&gt;
+&lt;p&gt;Ejercicio: Animar el autito rojo.&lt;/p&gt;
+
+&lt;canvas id="myCanvas" class="autito" width="800" height="500"&gt;
+    Tu navegador no soporta el tag de HTML5 canvas.
+&lt;/canvas&gt;
+&lt;button type="button" onclick="animar_autito()"&gt;Animar auto!!&lt;/button&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+                    </code>
+                </pre>
+                <p><b><u>JS:</u></b></p>
+                <pre class="language-js">
+                    <code>
+/**
+ * Esta es la función anima el auto y lo mueve de izquierda a derecha.
+ * @method animar_autito
+ * @return Valor que retorna
+ */
+function animar_autito() {
+    var cnv, ctx, pos_x=0, img;
+        img = new Image();
+        img.src = 'images/auto.png';
+        cnv = document.getElementById("myCanvas");
+        ctx = cnv.getContext('2d');
+        anim();
+    function anim() {
+        ctx.clearRect(0,100,800,500);
+        ctx.drawImage(img, pos_x, 100);
+        pos_x +=1;
+        setTimeout(anim,25);
+    }
+}
+                    </code>
+                </pre>
+                <p><a class="lnk_1" href="Ejercicios-JavaScript/auto_animado.html" target="_blank">Click aqui para ver la página del código anterior.</a></p>
+            </ol>
         </article>
     </section>
 </section>

@@ -3,80 +3,30 @@
  */
 
 /**
- * Descripción
- * @method Nombre de la función
- * @param Parámetro A
- * @param Parámetro B
- * @return Valor que retorna
- */
-
-/**
- * Created by Agus on 6/5/2017.
- */
-
-function evaluarValor(valor, id_elemento) {
-    valor = valor.replace (",", '.');
-
-    if(isNaN(valor))
-        alert("el valor no es numerico");
-    document.getElementById(id_elemento).value = "";
-}
-function mostrar_ocultar(opcion) {
-    if (opcion == 'mostrarDiv'){
-        document.getElementsByName("unDiv")[0].style.display = 'block';
-
-    }
-    if (opcion == 'ocultarDiv'){
-        document.getElementsByName("unDiv")[0].style.display = 'none';
-    }
-}
-
-function conversion_grados_radianes(nombre_unidad, valor_unidad){
-    var varRadianes, varGrados;
-    if (nombre_unidad == 'grados'){
-        varGrados = valor_unidad;
-        varRadianes = Math.PI/180*valor_unidad;
-    }
-    if (nombre_unidad == 'radianes'){
-        varRadianes = valor_unidad;
-        varGrados = 180/Math.PI*valor_unidad;
-
-    }
-    document.getElementsByTagName("input")[0].value = varGrados;
-    document.getElementsByTagName("input")[1].value = varRadianes;
-
-}
-
-/**
- * Conversión de unidades
+ * Esta es la funcion Conversión de unidades
  * @method conversordeunidades
  * @param nombre_unidad
  * @param valor_unidad
  * @return Valor que retorna
  */
-
-
 function conversordeunidades(nombre_unidad, valor_unidad) {
     var metro, pie, pulgada, yarda;
-
     valor_unidad = valor_unidad.replace(",", ".");
 
     if(isNaN(valor_unidad)){
-        alert("El valor ingresado es invalido");
-        metro = "";
-        pie = pulgada = yarda = null;
-
+        alert("Por favor ingresa un valor numérico, gracias!");
+        document.getElementById("metro").value = "";
+        document.getElementById("pie").value = "";
+        document.getElementById("pulgada").value = "";
+        document.getElementById("yarda").value = "";
     }
     else{
-
         if (nombre_unidad == 'metro'){
             pie = valor_unidad*3.28084;
             pulgada = valor_unidad*39.3701;
             yarda = valor_unidad*1.09361;
             metro = valor_unidad;
         }
-
-
         if (nombre_unidad == 'pie'){
             pie = valor_unidad;
             metro = valor_unidad/3.28084;
@@ -95,71 +45,170 @@ function conversordeunidades(nombre_unidad, valor_unidad) {
             pulgada = valor_unidad*39.3701;
             metro = valor_unidad/1.09361;
         }
-
         document.getElementById("pie").value = pie;
         document.getElementById("pulgada").value = pulgada;
         document.getElementById("yarda").value = yarda;
         document.getElementById("metro").value = metro;
-
     }
 }
 
+/**
+ * Esta es la funcion Conversion de Grados a Radianes y viceversa
+ * @method conversion_grados_radianes
+ * @param nombre_unidad
+ * @param valor_unidad
+ * @return Valor que retorna
+ */
+function conversion_grados_radianes(nombre_unidad, valor_unidad){
+    var varRadianes, varGrados;
+    valor_unidad = valor_unidad.replace(",", ".");
+    if(isNaN(valor_unidad)){
+        alert("Por favor ingresa un valor numérico, gracias!");
+        document.getElementsByTagName("input")[0].value = "";
+        document.getElementsByTagName("input")[1].value = "";
+    }
+    else {
+        if (nombre_unidad == 'grados') {
+            varGrados = valor_unidad;
+            varRadianes = Math.PI / 180 * valor_unidad;
+        }
+        if (nombre_unidad == 'radianes') {
+            varRadianes = valor_unidad;
+            varGrados = 180 / Math.PI * valor_unidad;
+        }
+        document.getElementsByTagName("input")[0].value = varGrados;
+        document.getElementsByTagName("input")[1].value = varRadianes;
+    }
+}
+
+/**
+ * Esta es la funcion muestra u oculta un DIV
+ * @method mostrar_ocultar
+ * @param opcion
+ * @return Valor que retorna
+ */
+function mostrar_ocultar(opcion) {
+    if (opcion == 'mostrarDiv'){
+        document.getElementsByName("unDiv")[0].style.display = 'block';
+    }
+    if (opcion == 'ocultarDiv'){
+        document.getElementsByName("unDiv")[0].style.display = 'none';
+    }
+}
+
+/**
+ * Esta es la funcion que Suma 2 numeros reales
+ * @method Sumar
+ * @param nums1
+ * @param nums2
+ * @return Valor que retorna
+ */
 function Sumar(){
     var num1 = document.getElementById('nums1');
     var num2 = document.getElementById('nums2');
-
     var resultado;
-
     if(!isNaN(num1.value) && !isNaN(num2.value) && (typeof num1.value !== undefined && typeof num2.value !== undefined)){
-        resultado = parseInt(num1.value) + parseInt(num2.value);
-        document.getElementById('totalS').value = resultado;
+        resultado = parseFloat(num1.value) + parseFloat(num2.value);
+        document.getElementById('totalS').value = Math.round10(resultado, -2);
     }else{
-        alert("Los valores ingresados deben ser validos");
+        alert("Por favor ingresa un valor numérico, gracias!");
+        document.getElementById('nums1').value = "";
+        document.getElementById('nums2').value = "";
     }
 }
 
+/**
+ * Esta es la funcion que resta 2 numeros reales
+ * @method Restar
+ * @param nums1
+ * @param nums2
+ * @return Valor que retorna
+ */
 function Restar(){
     var num1 = document.getElementById('numr1');
     var num2 = document.getElementById('numr2');
-
     var resultado;
-
     if(!isNaN(num1.value) && !isNaN(num2.value) && (typeof num1.value !== undefined && typeof num2.value !== undefined)){
-        resultado = parseInt(num1.value) - parseInt(num2.value);
-        document.getElementById('totalR').value = resultado;
+        resultado = parseFloat(num1.value) - parseFloat(num2.value);
+        document.getElementById('totalR').value = Math.round10(resultado, -2);
     }else{
         alert("Los valores ingresados deben ser validos");
+        document.getElementById('numr1').value = "";
+        document.getElementById('numr2').value = "";
     }
 }
 
+/**
+ * Esta es la funcion que Multiplica 2 numeros reales
+ * @method Multiplicar
+ * @param nums1
+ * @param nums2
+ * @return Valor que retorna
+ */
 function Multiplicar(){
     var num1 = document.getElementById('numm1');
     var num2 = document.getElementById('numm2');
-
     var resultado;
-
     if(!isNaN(num1.value) && !isNaN(num2.value) && (typeof num1.value !== undefined && typeof num2.value !== undefined)){
-        resultado = parseInt(num1.value) * parseInt(num2.value);
-        document.getElementById('totalM').value = resultado;
+        resultado = parseFloat(num1.value) * parseFloat(num2.value);
+        document.getElementById('totalM').value = Math.round10(resultado, -2);
     }else{
         alert("Los valores ingresados deben ser validos");
+        document.getElementById('numm1').value = "";
+        document.getElementById('numm2').value = "";
     }
 }
 
+/**
+ * Esta es la funcion que Divide 2 numeros reales
+ * @method Dividir
+ * @param nums1
+ * @param nums2
+ * @return Valor que retorna
+ */
 function Dividir(){
     var num1 = document.getElementById('numd1');
     var num2 = document.getElementById('numd2');
-
     var resultado;
-
     if(!isNaN(num1.value) && !isNaN(num2.value) && (typeof num1.value !== undefined && typeof num2.value !== undefined) && num2.value != 0){
-        resultado = parseInt(num1.value) / parseInt(num2.value);
-        document.getElementById('totalD').value = resultado;
-    }else{
-        alert("Los valores ingresados deben ser validos");
+        resultado = parseFloat(num1.value) / parseFloat(num2.value);
+        document.getElementById('totalD').value = Math.round10(resultado, -2);
+    }else {
+        if(num2.value == 0 && !isNaN(num1.value)){
+            document.getElementById('numd2').focus();
+            alert("El segundo numero tiene que ser distinto de 0");
+        }
+        else {
+            alert("Los valores ingresados deben ser validos");
+            document.getElementById('numd1').value = "";
+            document.getElementById('numd2').value = "";
+        }
     }
 }
 
+function procesar() {
+    var distancia=document.getElementById('distancia').value;
+    var selObj = document.getElementById('idmodelo');//recuperas la lista y la guardas en un objeto
+    var selIndex = selObj.options[selObj.selectedIndex].text;//del objeto lista recuperas el texto que fue elegido y lo almacenas en una variable (selIndex)
+    var final = distancia+'#'+selIndex;
+
+    document.getElementById('dist').value = final;
+    document.forms.web2s.submit();
+}
+
+function recuperar() {
+    var distancia =9;
+    document.getElementById('dist').value = distancia;
+
+}
+
+
+
+/**
+ * Esta es la función dibuja un Círculo y un Cuadrado en Canvas
+ * @method dibujar_circulo_cuadrado
+ * @return Valor que retorna
+ */
 function dibujar_circulo_cuadrado(){
 
     var canvas = document.getElementById("myCanvas");
@@ -174,6 +223,11 @@ function dibujar_circulo_cuadrado(){
     ctx.stroke();
 }
 
+/**
+ * Esta es la función dibuja una Cuadrícula en Canvas
+ * @method dibujar_cuadriculado
+ * @return Valor que retorna
+ */
 function dibujar_cuadriculado(){
     var canvas = document.getElementById("myCanvas");
     var ctx = canvas.getContext("2d");
@@ -202,21 +256,48 @@ function dibujar_cuadriculado(){
     ctx.closePath();
 }
 
+/**
+ * Esta es la funcion traslada una imagen a un punto determinado ingresado por el usuario
+ * @method dibujar_auto
+ * @param posicionX
+ * @param posicionY
+ * @return Valor que retorna
+ */
 function dibujar_auto(){
     var x = document.getElementById('posicionX').value;
     var y = document.getElementById('posicionY').value;
-
     var canvas = document.getElementById("myCanvas");
     var ctx = canvas.getContext("2d");
-
     var w = canvas.width;
     var h = canvas.height;
 
     auto = new Image();
     auto.src = 'images/auto.png';
-    auto.onload = function(){
-        ctx.drawImage(auto, x, y);
-    }
 
+    auto.onload = function(){
+        ctx.clearRect(0,0,w,h);
+        ctx.drawImage(auto, x, y);
+
+    }
+}
+
+/**
+ * Esta es la función anima el auto y lo mueve de izquierda a derecha.
+ * @method animar_autito
+ * @return Valor que retorna
+ */
+function animar_autito() {
+    var cnv, ctx, pos_x=0, img;
+        img = new Image();
+        img.src = 'images/auto.png';
+        cnv = document.getElementById("myCanvas");
+        ctx = cnv.getContext('2d');
+        anim();
+    function anim() {
+        ctx.clearRect(0,100,800,500);
+        ctx.drawImage(img, pos_x, 100);
+        pos_x +=1;
+        setTimeout(anim,25);
+    }
 }
 

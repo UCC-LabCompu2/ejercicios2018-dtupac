@@ -11,18 +11,19 @@
 
 <div class="centrado div-conver">
     <h1>Conversor de Unidades</h1>
-    <form>
+    <form action="segundaWeb.html" method="get" enctype="text/plain">
         <p>
             <!--Label es incluido por cuestiones de Accesibilidad-->
             <!--Note que Label y el id del elemento poseen igual nombre-->
-            <label for="distancia"> Distancia</label> = <input id="distancia" type="text" name="inp_distancia">
-            <select name="unidades">
-                <option value="unid_metros">Metros</option>
-                <option value="unid_yardas">Yardas</option>
-                <option value="unid_pie">Pies</option>
-                <option value="unid_pulgadas">Pulgadas</option>
+            <label for="distancia"> Distancia</label> = <input id="distancia" type="text" name="inp_distancia" >
+            <select id="idmodelo" name="unidades">
+                <option value="Metros">Metros</option>
+                <option value="Yardas">Yardas</option>
+                <option value="Pies">Pies</option>
+                <option value="Pulgadas">Pulgadas</option>
             </select>
-            <button>
+
+            <button type="submit" value="enviar" onclick="procesar();">
                 Segunda Web!
             </button>
         </p>
