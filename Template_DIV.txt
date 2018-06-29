@@ -1,0 +1,70 @@
+    <aside>
+        <ul class="w3-ul">
+            <li>INDICE</li>
+            <li>TRABAJO PRÁCTICO Nº 1</li>
+            <li>TRABAJO PRÁCTICO Nº 2</li>
+            <li>TRABAJO PRÁCTICO Nº 3</li>
+            <li>TRABAJO PRÁCTICO Nº 4</li>
+            <li>TRABAJO PRÁCTICO Nº 5</li>
+            <li>TRABAJO PRÁCTICO Nº 6</li>
+            <li>TRABAJO PRÁCTICO Nº 7</li>
+            <li>TRABAJO PRÁCTICO Nº 8</li>
+            <li>TRABAJO PRÁCTICO Nº 9</li>
+        </ul>
+    </aside>
+
+
+
+<li></li>
+
+                <div class="imax">
+                    <img  src="img/" alt="">
+                </div>
+
+                <div class="imax">
+                    <img  src="img/" alt=""><br>
+                    <img  src="img/" alt="">
+                </div>
+
+
+<p><a class="lnk_1" href="Ejercicios-JavaScript/" target="_blank">Click aqui</a></p>
+
+
+    <link href="css/prism.css" rel="stylesheet" />
+
+<script src="js/prism.js"></script>
+------
+<
+&lt;
+------
+>
+&gt;
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+                <pre class="language-markup">
+                    <code>
+                    </code>
+                </pre>
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+<p><b><u>HTML:</u></b></p>
+<p><b><u>JS:</u></b></p>
+
+<A name="tp7ejer5"></A>
+<p>Este ejercicio lo mostramos completo en en el TPNº: 7 <a href="TP7.html#tp7ejer5" target="_blank" id="a_link">Ejercicio 5</a></p>
+
+
+<!-- Area de Preguntas Teóricas  -->
+<!-- Pregunta Nº 1 -->
+<!-- esto es un comentario -->
+
+<!-- Area de Ejercicios Prácticos  -->
+<!-- Ejercicio Nº  -->
+
+<p><a class="lnk_1" href="Ejercicios-JavaScript/" target="_blank">Click aqui para ver la página del código anterior.</a></p>
+
+<a href="http://www.servidor.com/pagina.html#ancla">Enlace</a>
+
+https://www.youtube.com/watch?v=SJOybVGpouw&list=PL2FOMZ1Ba3pnFwO-fuRdVHx9gLN-xsuhO&index=9

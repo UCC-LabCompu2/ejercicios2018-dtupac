@@ -1,0 +1,38 @@
+body {
+    background-color: white;
+    max-width: 1024px;
+}
+.sidebar, .main{
+    height: 400px;
+    background-color: #6bcdfd;
+    font-family: Consolas, monospace;
+    color: #FFFFFF;
+    border-radius: 5px;
+    padding: 10px;
+}
+div{
+    margin:0 10px;
+}
+.wrap{
+    background-color: #2196F3;
+    height: 500px;
+    border-radius: 5px;
+}
+.sidebar{
+    float: left;
+    overflow: auto;
+}
+.main{
+    margin-left: 100px;
+    overflow: auto;
+}
+h2{
+    padding:1%;
+    font-family: "DejaVu Serif Condensed", cursive;
+    color: #FFFFFF;
+}
+#columna1 {
+    display: block;
+
+    margin: 140% 0;
+}

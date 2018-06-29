@@ -1,8 +1,11 @@
 body {
     text-align: center;
     font-family: 'Oswald', sans-serif;
-    font-size: 150%;
+    font-size: 130%;
     background-image: linear-gradient(to right, #776688, #19ac67);
+    max-width: 966px;
+    margin: auto;
+
 }
 
 div {
@@ -13,10 +16,16 @@ div {
     background-color: #f1f1f1;
 }
 
+#titulo{padding: 0;}
+
 .imgUsario {
+    display: block;
+    float: left;
+    margin: 3%;
     width: 20%;
     border-radius: 50%;
 }
-span{
-    font-weight: bold;
-}
+span{font-weight: bold;}
+
+
+

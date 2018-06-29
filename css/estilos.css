@@ -1,39 +1,4 @@
-/*
-Esto es un comentario en CSS
-
-4 elementos a los que les podemos dar estilos:
-	1) etiquetas html
-	2) identificadores html->id  css->#
-	3) clases html->class css->.
-	4) pseudo clases :hover trabajan o se desencadenan con eventos por ejemplo al estar el mouse sobre los elementos
-
-Reglas de Oro para trabajar con CSS
-
-1)los estilos se definen en el siguiente orden:
-	1)etiquetas HTML
-	2)identificadores
-	3)clases
-	ordenadas alfabeticamente
-
-2) los atributos se ordenan alfabeticamente
-
-3) en el body siempre hay que especificar un tamaño de fuente
-
-http://meyerweb.com/eric/css/colors/
-http://html-color-codes.info/
-
-unidades de medida en css:
-	unidades relativas
-		% em
-	unidades absolutas
-		px pt
-	
-	100% = 12pt = 16px = 1em 
-
-http://www.fontsquirrel.com/
-*/
-*
-{
+* {
 	border: 0;
 	margin: 0;
 	/*padding: 0;*/
@@ -247,3 +212,14 @@ img {
 #imagina{text-align: center;}
 
 .lnk_1 {color: #09eb5d;}
+
+#a_link {
+	padding: 1px;
+	margin: 0.05em;
+	border-radius: 5px;
+	color:#fff!important;
+	background-color:#011E30!important
+}
+#a_link:hover {text-decoration: none; opacity: 0.3;}
+
+.griega {list-style-type : lower-greek;}

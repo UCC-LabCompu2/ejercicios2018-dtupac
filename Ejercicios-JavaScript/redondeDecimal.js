@@ -1,4 +1,3 @@
-// Conclusión
 (function() {
     /**
      * Ajuste decimal de un número.

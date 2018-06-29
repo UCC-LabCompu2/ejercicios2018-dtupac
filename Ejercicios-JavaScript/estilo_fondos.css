@@ -1,0 +1,63 @@
+a {text-decoration: none; color: #fff;}
+body {
+    background-image: url("../img/fondo.jpg");
+    background-repeat: repeat;
+    color: #FFF;
+    font-family: "Chalet", Helvetica, Verdana;
+    font-size: 1.5em;
+}
+#divi {
+    display: block;
+    width:960px;
+    height: 600px;
+    max-width: 960px;
+    max-height: 960px;
+    background-image: url("../img/UCCLogo3.png");
+    background-blend-mode: luminosity;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: 11%;
+    background-color: #1E6381;
+    border: 7px dotted;
+    background-clip: padding-box;
+    border-radius: 10px;
+    padding: .25em;
+    margin: .5em auto;
+}
+h3 {
+    display: block;
+    text-align: center;
+    margin-top: 57%;
+    background-color: #2196F3;
+    background-origin: content-box;
+}
+footer, header, nav {
+    background: #1E6381;
+    border-radius: .5em;
+    margin: .5em auto;
+    max-width: 960px;
+    padding: .25em;
+    text-align: center;
+}
+#nava li{
+    display: inline-block;
+    list-style-type:none;
+    vertical-align: 0.5em;
+    padding: 10px;
+    margin: 0.05em;
+    border-radius: 5px;
+    color:#fff!important;
+    background-color:#011E30!important
+}
+#nava li a:hover {
+    text-decoration: none;
+    opacity: 0.3;
+}
+p {font-size: .5em;}
+h1 {
+    color: #F60;
+    margin: .25em auto;
+    text-align: center;
+    text-shadow: .25em .25em .5em rgba(255,255,255,.5);
+}
