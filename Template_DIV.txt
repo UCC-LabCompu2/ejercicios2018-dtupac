@@ -61,7 +61,9 @@
 <!-- esto es un comentario -->
 
 <!-- Area de Ejercicios Prácticos  -->
-<!-- Ejercicio Nº  -->
+<!-- Ejercicio Nº 1 -->
+
+ <!-- Punto (a) -->
 
 <p><a class="lnk_1" href="Ejercicios-JavaScript/" target="_blank">Click aqui para ver la página del código anterior.</a></p>
 

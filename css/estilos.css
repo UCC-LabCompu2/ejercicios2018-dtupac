@@ -115,10 +115,10 @@ h1
 	width: 90%;
 }
 h5 {
-	padding: 0.2em 0;
+	padding: 0.4em 0;
 }
 h6 {
-	padding: 0.2em 0;
+	padding: 0.5em 0;
 }
 
 ol li{
@@ -223,3 +223,7 @@ img {
 #a_link:hover {text-decoration: none; opacity: 0.3;}
 
 .griega {list-style-type : lower-greek;}
+
+.tbcod {font-size: 1.4em;}
+
+.espacioentreparrafo {padding: 2em 0;}

@@ -50,6 +50,7 @@
             <h6>Consignas a desarrollar en el trabajo práctico </h6>
             <p>La red de redes no sería lo que es hoy sin la ayuda de HTML5. HTML5 es un conjunto de lenguajes que posibilitan tener aplicaciones Web con grandes funcionalidades en nuestros navegadores.</p>
             <p>La nueva versión de 5 de HTML nos da la libertad como programadores de realizar aplicaciones completas, juegos, animaciones, o simples artículos de Blog. En la actualidad, HTML5 no se limita solamente a navegadores web, sino que se pueden realizar aplicaciones móviles y de escritorio sin necesidad de estar conectados.</p>
+            <p class="espacioentreparrafo"></p>
 
             <!-- Area de Preguntas Teóricas  -->
             <h6>Preguntas</h6>
@@ -92,55 +93,466 @@
 
                 <!-- Pregunta Nº 3 -->
                 <li class="pregunta">¿Cómo es la estructura típica de una aplicación web? ¿Cuántas capas posee y que función cumple cada capa?</li>
-                <p>Normalmente se posee 3 capas.</p>
+                <p>Aunque existen muchas variaciones posibles, una aplicación web está normalmente estructurada como una aplicación de tres-capas</p>
                 <p></p>
                 <ul>
-                    <li>Capa del Cliente</li>
-                    <li>Capa Intermedia</li>
-                    <li>Capa de Servidor</li>
+                    <li><u>Capa del Cliente</u></li>
+                    <p>Es el navegador en si o todo lo que va a correr en el navegador. También denominado Front-End, la parte del software que interactúa con
+                    los usuarios.</p>
+                    <li><u>Capa Intermedia</u></li>
+                    <p>Es la parte de la aplicación web (código fuente) que corre en el servidor. También denominado Back-End, que como su nombre indica
+                    es la parte que interactúa entre el front-end y la base de datos. Pueden utilizar lenguajes de programación tales como PHP, JavaScript
+                    Ruby, Python, etc.</p>
+                    <li><u>Capa de Servidor</u></li>
+                    <p>Es la capa donde esta la Base de Datos y toda la lógica de negocio. Por ejemplo es donde se van a guardar los datos y donde van
+                    a estar las restricciones de usuario.</p>
                 </ul>
+                <div class="imax">
+                    <img  src="img/3capas.gif" alt="3 capas">
+                </div>
+                <p>Generalmente es una estructura como la detallada antes, pero existen otras.</p>
+                <p>El navegador web manda peticiones a la capa intermedia, la cual ofrece servicios valiéndose de consultas y actualizaciones a la base de datos,
+                    y a su vez, proporciona una interfaz de usuario.</p>
 
                 <!-- Pregunta Nº 4 -->
                 <li class="pregunta">¿Qué diferencias existen entre las aplicaciones web y las páginas web?</li>
-                <p></p>
+                <p>Una pagina web es estática, el usuario no es parte activa de la misma, por ejemplo un blog o un diario digital.</p>
+                <p>En cambio las aplicaciones web es un conjunto de páginas Web estáticas y dinámicas.</p>
 
                 <!-- Pregunta Nº 5 -->
                 <li class="pregunta">¿Qué son las páginas web estáticas y dinámicas? ¿Cómo es el procesamiento de datos en las webs estáticas y en las webs dinámicas?</li>
+                <ul>
+                    <li><b>Web Estática:</b> No cambia cuando un usuario la solicita.
+                        El servidor Web envía la página al navegador Web solicitante sin modificarla.
+                    </li>
+                    <li><b>Web Dinámica:</b> Contiene elementos que permiten la comunicación activa entre el usuario y la
+                        aplicación, y cuyo contenido se genera a partir de lo que el usuario introduce.
+                    </li>
+                </ul>
+                <p>El procesamiento de datos de una web estática se conforma así:</p>
+                <div class="imax">
+                    <img src="img/procesamiento_webEstatica.png" alt="procesamiento_webEstatica">
+                </div>
+                <p>Donde el usuario mediante el browser, envía un requerimiento <b>Request</b> al web server, por ejemplo haciendo click en el link de una nueva página. </p>
+                <p>Luego el web server le responde <b>response</b> con el archivo html correspondiente a esa nueva página que el usuario clickeó.</p>
                 <p></p>
-
+                <p>El procesamiento de datos de una web dinámica puede ser:</p>
+                <ol type="a">
+                    <li>Procesamiento de Web Dinámica</li>
+                    <div class="imax">
+                        <img src="img/procesamiento_webDinamica.png" alt="procesamiento_webDinamica">
+                    </div>
+                    <p>Al igual que en el procesamiento estático, aquí el desarrollador puede agregar cierto código que puede personalizar la respuesta según caracteriasticas
+                    que tiene el usuario.</p>
+                    <p>Las respuestas cambian según quien lo requiere.</p>
+                    <li>Procesamiento de Web Dinámica + Base de Datos</li>
+                    <div class="imax">
+                        <img src="img/procesamiento_webCompleto.png" alt="procesamiento_webCompleto">
+                    </div>
+                    <p>En este caso sería un paso más del paradigma anterior, ya que incluye a la Base de Datos, por lo tanto frente a un request de un usuario registrado
+                    en la Base de Datos que solicita por ejemplo una tabla de precios, entonces antes que el servidor responda (response), la aplicación del servidor se comunicará
+                    con la Base de Datos realizará algunas comprobaciones y ejecutará la consulta(query) para luego responder con lo solicitado.</p>
+                </ol>
                 <!-- Pregunta Nº 6 -->
                 <li class="pregunta">¿Qué es un servidor de aplicaciones?</li>
-                <p></p>
+                <p>Es un software que ayuda al Servidor Web a procesar las páginas que contienen scripts o etiquetas del lado del servidor. Cuando se solicita al servidor una página de este
+                    tipo, el Servidor Web pasa la página al servidor de aplicaciones para su procesamiento antes de enviarla al navegador.</p>
 
                 <!-- Pregunta Nº 7 -->
                 <li class="pregunta">¿Qué es la web 2.0?</li>
-                <p></p>
+                <p>Representa la evolución de las aplicaciones tradicionales hacia aplicaciones web, enfocadas en el usuario.</p>
+                <p>Se trata de aplicaciones que generan colaboración y de servicios que reemplacen las aplicaciones de escritorio (permite que la gente escriba en internet,
+                    como por ejemplo, blogs o wikis) y comparta sus producciones (fotos, videos, etc).</p>
 
                 <!-- Pregunta Nº 8 -->
                 <li class="pregunta">¿Qué lenguajes se utilizan generalmente para la programación web?</li>
-                <p></p>
+                <p>Se suelen usar los siguientes:</p>
+                <ul>
+                    <li>HTML (HyperText Markup Language)</li>
+                    <li>JavaScript</li>
+                    <li>Python</li>
+                    <li>PHP (Hypertext Pre-processor)</li>
+                    <li>ASP (Active Server Pages)</li>
+                    <li>ASP.Net</li>
+                    <li>JSP (Java Server Pages)</li>
+                    <li>Ruby</li>
+                </ul>
+                <p>Lenguajes según rama de actividad:</p>
+                <ul>
+                    <li><b>Programador de Servidores o Back-end:</b> Python, Ruby, PHP, Java, .Net (o JavaScript con nodeJS).
+                        Conocimientos de bases de datos y de administración de sistemas.
+                    </li>
+                    <li><b>Programador de clientes o Front-end:</b> HTML, CSS, Javascript. Conocimientos de diseño.</li>
+                    <li><b>Programador móvil:</b> Objective C, Swift, Java (para Android). HTML/CSS para sitios web móviles.
+                        Conocimientos sobre servidores.
+                    </li>
+                    <li><b>Programador 3D o de videojuegos:</b> C/C++, OpenGL, Animación. Conocimientos de diseño y artísticos.</li>
+                    <li><b>Programador de alto rendimiento:</b> C/ C++, Java, conocimientos en matemáticas y análisis cuantitativo.
+                    </li>
+                </ul>
 
                 <!-- Pregunta Nº 9 -->
                 <li class="pregunta">¿Qué significan las siglas HTML? ¿Qué es HTML5? ¿Qué características tiene? Explique cada una.</li>
-                <p></p>
+                <p><b>HTML</b>, sigla en inglés de <i><b>HyperText Markup Language</b></i> (lenguaje de marcas de hipertexto),
+                    hace referencia al lenguaje de marcado para la elaboración de páginas web.</p>
+                <p>Es un lenguaje sirve para modelar documentos, o sea la forma en que la información y contenido es presentada a las personas.
+                    Se basa en el concepto de uso de etiquetas.</p>
+                <p><b><u>HTML5:</u></b> es la última evolución de la norma que define HTML</p>
+                <p><b><u>Características:</u></b></p>
+                <div class="imax">
+                    <img src="img/HTML5_Caracteristicas.png" alt="HTML5_Caracteristicas">
+                </div>
+                <ul>
+                    <li><em><b>Semántica</b></em>: lo que le permite describir con mayor precisión cuál es su contenido.</li>
+                    <li><em><b>Conectividad</b></em>: lo que le permite comunicarse con el servidor de formas nuevas e innovadoras.</li>
+                    <li><em><b>Desconectado y almacenamiento</b></em>: permite a páginas web almacenar datos, localmente, en el lado del cliente
+                        y operar fuera de línea de manera más eficiente.</li>
+                    <li><em><b>Multimedia</b></em>: permite hacer vídeo y audio de ciudadanos de primera clase en la Web abierta.</li>
+                    <li><em><b>Gráficos y efectos 2D/3D</b></em>: permite una gama mucho más amplia de opciones de presentación.</li>
+                    <li><em><b>Rendimiento e Integración</b></em>: proporcionar una mayor optimización de la velocidad y un mejor uso del hardware del equipo.</li>
+                    <li><em><b>Dispositivo de Acceso</b></em>: admite el uso de varios dispositivos de entrada y salida.</li>
+                    <li><em><b>Styling</b></em>: deja a los autores escribir temas más sofisticados.</li>
+                </ul>
 
                 <!-- Pregunta Nº 10 -->
                 <li class="pregunta">¿Qué es una hoja de estilo o CSS?</li>
-                <p></p>
+                <p><b>CASCADING STYLE SHEETS:</b> Hojas de Estilo en Cascada (CSS) es un lenguaje de estilo de hojas usado para describir la presentación
+                    de las páginas web escrito en HTML o XML.</p>
+                <p>CSS permite la separación del contenido del documento de la presentación del documento (disposición, colores, fuentes, etcétera).</p>
 
                 <!-- Pregunta Nº 11 -->
                 <li class="pregunta">¿Cómo se pueden agregar estilos en las páginas web? ¿Qué ventajas y desventajas tiene cada método?</li>
-                <p></p>
+                <p>Básicamente se pueden agregar estilos en estas 3 formas:</p>
+                <ul>
+                    <li><b><u>Estilo en Linea</u></b> </li>
+                    <p>Se usa el atributo "style" para definir como la etiqueta debe mostrarse.</p>
+                    <p>Por ejemplo:</p>
+                    <pre class="language-markup">
+                        <code>
+&lt;h1 style="color: red; font-type: helvetica; font-size: 2em"&gt;
+                        </code>
+                    </pre>
+                    <li><b><u>Incrustando una Hoja de Estilo</u></b></li>
+                    <p>Se incorpora en &lt;head&gt;</p>
+                    <p>Se describe:</p>
+                    <pre class="language-markup">
+                        <code>
+    &lt;style&gt;
+        Selector {
+            propiedad: valor;
+        }
+    &lt;/style&gt;
+                        </code>
+                    </pre>
+                    <p>Por ejemplo:</p>
+                    <pre class="language-markup">
+                        <code>
+    &lt;style&gt;
+        h1 {
+            color: #333333;
+            font-weight: bold;
+            margin-left: 15px;
+        }
+    &lt;/style&gt;
+                        </code>
+                    </pre>
+                    <li><b><u>Enlazando una hoja de Estilo Externa</u></b></li>
+                    <p>En el tag: &lt;head&gt; se emplea un link a un archivo externo.</p>
+                    <p>Por ejemplo:</p>
+                    <pre class="language-markup">
+                        <code>
+&lt;link rel="stylesheet" href="estilos.css" type="text/css"&gt;
+                        </code>
+                    </pre>
+                    <p></p>
+                </ul>
 
                 <!-- Pregunta Nº 12 -->
                 <li class="pregunta">¿Qué buenas prácticas se deben seguir a la hora de diseñar una página web?</li>
-                <p></p>
+                <p>Podemos seguir las siguientes:</p>
+                <ul>
+                    <li>Comprobar el diseño en varios navegadores</li>
+                    <li>Depuracion (Ej. firebug)</li>
+                    <li>Comentar el código</li>
+                    <li>Identar y hacer el código fácil de leer</li>
+                    <li>Usar sistema comun de nombrado</li>
+                    <li>Evitar tamaños absolutos en fuentes o elementos</li>
+                    <li>Utilizar notación de colores en hexadecimal</li>
+                    <li>Ordenar los elementos según pertenezcan a cabecera, contenido principal o pie de página</li>
+                </ul>
 
                 <!-- Pregunta Nº 13 -->
                 <li class="pregunta">Haga un listado de las etiquetas de HTML que ha empleado en los diversos ejercicios, y explique los atributos y la funcionalidad.</li>
                 <p></p>
-
+                <table>
+                    <thead>
+                    <tr>
+                        <th>Atributo</th>
+                        <th>Etiqueta</th>
+                        <th>Funcionalidad</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td><code class="tbcod">action</code></td>
+                        <td><code class="tbcod">&lt;form&gt;</code></td>
+                        <td>La URL del programa que procesa la información enviada en el formulario.</td>
+                    </tr>
+                    <tr>
+                        <td><code class="tbcod">align</code></td>
+                        <td><code class="tbcod">&lt;applet&gt;, &lt;caption&gt;, &lt;col&gt;, &lt;colgroup&gt;, &lt;hr&gt;, &lt;iframe&gt;, &lt;img&gt;, &lt;table&gt;, &lt;tbody&gt;, &lt;td&gt;, &lt;tfoot&gt; , &lt;th&gt;, &lt;thead&gt;, &lt;tr&gt;</code></td>
+                        <td>Especifica el alineamiento horizontal del elemento.</td>
+                    </tr>
+                    <tr>
+                        <td><code class="tbcod">alt</code></td>
+                        <td><code class="tbcod">&lt;applet&gt;, &lt;area&gt;, &lt;img&gt;, &lt;input&gt;</code></td>
+                        <td>Texto alternativo en caso de que la imagen no se pueda mostrar.</td>
+                    </tr>
+                    <tr>
+                        <td><code class="tbcod">autocomplete</code></td>
+                        <td><code class="tbcod">&lt;form&gt;, &lt;input&gt;</code></td>
+                        <td>Indica si los controles en este formulario pueden tener por defecto sus valores completados automáticamente por el navegador.</td>
+                    </tr>
+                    <tr>
+                        <td><code class="tbcod">autofocus</code></td>
+                        <td><code class="tbcod">&lt;button&gt;, &lt;input&gt;, &lt;keygen&gt;, &lt;select&gt;, &lt;textarea&gt;</code></td>
+                        <td>El elemento debería recibir foco automáticamente después de haberse cargado la página.</td>
+                    </tr>
+                    <tr>
+                        <td><code class="tbcod">autoplay</code></td>
+                        <td><code class="tbcod">&lt;audio&gt;, &lt;video&gt;</code></td>
+                        <td>El audio o video debería empezar lo antes posible.</td>
+                    </tr>
+                    <tr>
+                        <td><code class="tbcod">bgcolor</code></td>
+                        <td><code class="tbcod">&lt;body&gt;, &lt;col&gt;, &lt;colgroup&gt;, &lt;marquee&gt;, &lt;table&gt;, &lt;tbody&gt;, &lt;tfoot&gt;, &lt;td&gt;, &lt;th&gt;, &lt;tr&gt;</code></td>
+                        <td>Color de fondo del elemento.<br>
+                            <strong>Nota:</strong> Este atributo se mantiene como referencia. Por favor usa la propiedad CSS <code class="tbcod">background-color</code> en su lugar.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><code class="tbcod">border</code></td>
+                        <td><code class="tbcod">&lt;img&gt;, &lt;object&gt;, &lt;table&gt;</code></td>
+                        <td>El ancho del borde.<br>
+                            <strong>Nota:</strong> Este atributo se mantiene como referencia. Por favor usa la propiedad CSS <code class="tbcod">border</code> en su lugar.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><code class="tbcod">checked</code></td>
+                        <td><code class="tbcod">&lt;command&gt;, &lt;input&gt;</code></td>
+                        <td>Indica que el elemento debería estar marcado al cargar la página.</td>
+                    </tr>
+                    <tr>
+                        <td><code class="tbcod">cite</code></td>
+                        <td><code class="tbcod">&lt;blockquote&gt;, &lt;del&gt;, &lt;ins&gt;, &lt;q&gt;</code></td>
+                        <td>Contiene una URL que apunta a la fuente de la cita o cambio.</td>
+                    </tr>
+                    <tr>
+                        <td><code class="tbcod">class</code></td>
+                        <td><code class="tbcod">Atributo Global</code></td>
+                        <td>Usualmente empleado con CSS para aplicar estilos a elementos con propiedades en comun.</td>
+                    </tr>
+                    <tr>
+                        <td><code class="tbcod">code</code></td>
+                        <td><code class="tbcod">&lt;applet&gt;</code></td>
+                        <td>Especifica la URL del archivo de tipo applet a ser cargado y ejecutado.</td>
+                    </tr>
+                    <tr>
+                        <td><code class="tbcod">color</code></td>
+                        <td><code class="tbcod">&lt;basefont&gt;, &lt;font&gt;, &lt;hr&gt;</code></td>
+                        <td>Este atributo establece el color de texto utilizando un nombre de color o en formato hexadecimal #RRGGBB.<br>
+                            <strong>Nota:</strong> Este atributo se mantiene como referencia. Por favor usa la propiedad CSS <code class="tbcod">color</code> en su lugar.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><code class="tbcod">cols</code></td>
+                        <td><code class="tbcod">&lt;textarea&gt;</code></td>
+                        <td>Define el número de columnas en un área de texto.</td>
+                    </tr>
+                    <tr>
+                        <td><code class="tbcod">colspan</code></td>
+                        <td><code class="tbcod">&lt;td&gt;, &lt;th&gt;</code></td>
+                        <td>Define el número de columnas que una celda debe contener.</td>
+                    </tr>
+                    <tr>
+                        <td><code class="tbcod">controls</code></td>
+                        <td><code class="tbcod">&lt;audio&gt;, &lt;video&gt;</code></td>
+                        <td>Indica si el navegador debe mostrar controles de reproduccion al usuario.</td>
+                    </tr>
+                    <tr>
+                        <td><code class="tbcod">dir</code></td>
+                        <td><code class="tbcod">Atributo Global</code></td>
+                        <td>Define la dirección del texto. Los valores permitidos son ltr (Izquierda-a-Derecha) o rtl (Derecha-a-Izquierda).</td>
+                    </tr>
+                    <tr>
+                        <td><code class="tbcod">disabled</code></td>
+                        <td><code class="tbcod">&lt;button&gt;, &lt;command&gt;, &lt;fieldset&gt;, &lt;input&gt;, &lt;keygen&gt;, &lt;optgroup&gt;, &lt;option&gt;, &lt;select&gt;, &lt;textarea&gt;</code></td>
+                        <td>Indica si el usuario puede interactuar con el elemento.</td>
+                    </tr>
+                    <tr>
+                        <td><code class="tbcod">download</code></td>
+                        <td><code class="tbcod">&lt;a&gt;, &lt;area&gt;</code></td>
+                        <td>Indica que el hipervínculo es utilizado para descargar un recurso.</td>
+                    </tr>
+                    <tr>
+                        <td><code class="tbcod">draggable</code></td>
+                        <td><code class="tbcod">Atributo Global</code></td>
+                        <td>Define si el elemento puede ser arrastrado.</td>
+                    </tr>
+                    <tr>
+                        <td><code class="tbcod">dropzone</code></td>
+                        <td><code class="tbcod">Atributo Global</code></td>
+                        <td>Indica que el elemento acepta contenido soltado en el mismo.</td>
+                    </tr>
+                    <tr>
+                        <td><code class="tbcod">form</code></td>
+                        <td><code class="tbcod">&lt;button&gt;, &lt;fieldset&gt;, &lt;input&gt;, &lt;keygen&gt;, &lt;label&gt;, &lt;meter&gt;, &lt;object&gt;, &lt;output&gt;, &lt;progress&gt;, &lt;select&gt;, &lt;textarea&gt;</code></td>
+                        <td>Indica el formulario al que pertenece el elemento.</td>
+                    </tr>
+                    <tr>
+                        <td><code class="tbcod">headers</code></td>
+                        <td><code class="tbcod">&lt;td&gt;, &lt;th&gt;</code></td>
+                        <td>IDs de los elementos <code class="tbcod">&lt;th&gt;</code> que aplican a este elemento.</td>
+                    </tr>
+                    <tr>
+                        <td><code class="tbcod">height</code></td>
+                        <td><code class="tbcod">&lt;canvas&gt;, &lt;embed&gt;, &lt;iframe&gt;, &lt;img&gt;, &lt;input&gt;, &lt;object&gt;, &lt;video&gt;</code></td>
+                        <td>Especifica la altura de los elementos enumerados aquí. Para todos los demás elementos, usa la propiedad CSS <code class="tbcod">height</code> en su lugar.<br>
+                            <strong>Nota:</strong> En algunos casos, como los <code class="tbcod">height</code> en su lugar.</td>
+                    </tr>
+                    <tr>
+                        <td><code class="tbcod">high</code></td>
+                        <td><code class="tbcod">&lt;meter&gt;</code></td>
+                        <td>Indica el menor valor del rango alto.</td>
+                    </tr>
+                    <tr>
+                        <td><code class="tbcod">href</code></td>
+                        <td><code class="tbcod">&lt;a&gt;, &lt;area&gt;, &lt;base&gt;, &lt;link&gt;</code></td>
+                        <td>La URL de un recurso asociado.</td>
+                    </tr>
+                    <tr>
+                        <td><code class="tbcod">id</code></td>
+                        <td><code class="tbcod">Atributo Global</code></td>
+                        <td>Identificador el elemento para acceder al mismo desde CSS o Javascript, este indicador debe ser unico para cada elemento.</td>
+                    </tr>
+                    <tr>
+                        <td><code class="tbcod">method</code></td>
+                        <td><code class="tbcod">&lt;form&gt;</code></td>
+                        <td>Define el método <a href="/es/docs/Web/HTTP">HTTP</a> a emplear para enviar el formulario. Puede ser <code class="tbcod">GET</code> (predeterminado) o <code class="tbcod">POST</code>.</td>
+                    </tr>
+                    <tr>
+                        <td><code class="tbcod">name</code></td>
+                        <td><code class="tbcod">&lt;button&gt;, &lt;form&gt;, &lt;fieldset&gt;, &lt;iframe&gt;, &lt;input&gt;, &lt;keygen&gt;, &lt;object&gt;, &lt;output&gt;, &lt;select&gt;, &lt;textarea&gt;, &lt;map&gt;, &lt;meta&gt;, &lt;param&gt;</code></td>
+                        <td>Nombre del elemento. Por ejemplo utilizado por el servidor para identificar los campos en el envio de formularios.</td>
+                    </tr>
+                    <tr>
+                        <td><code class="tbcod">preload</code></td>
+                        <td><code class="tbcod">&lt;audio&gt;, &lt;video&gt;</code></td>
+                        <td>Indica si el recurso o partes del mismo deben ser precargadas.</td>
+                    </tr>
+                    <tr>
+                        <td><code class="tbcod">readonly</code></td>
+                        <td><code class="tbcod">&lt;input&gt;, &lt;textarea&gt;</code></td>
+                        <td>Indica si el elemento puede ser editado por el usuario.</td>
+                    </tr>
+                    <tr>
+                        <td><code class="tbcod">rel</code></td>
+                        <td><code class="tbcod">&lt;a&gt;, &lt;area&gt;, &lt;link&gt;</code></td>
+                        <td>Especifica la relación entre el objeto destino y el objeto enlace.</td>
+                    </tr>
+                    <tr>
+                        <td><code class="tbcod">required</code></td>
+                        <td><code class="tbcod">&lt;input&gt;, &lt;select&gt;, &lt;textarea&gt;</code></td>
+                        <td>Indica si se requiere rellenar o no este elemento.</td>
+                    </tr>
+                    <tr>
+                        <td><code class="tbcod">reversed</code></td>
+                        <td><code class="tbcod">&lt;ol&gt;</code></td>
+                        <td>Indica si la lista debe ser mostrada en orden descendente en vez de ascendente.</td>
+                    </tr>
+                    <tr>
+                        <td><code class="tbcod">rows</code></td>
+                        <td><code class="tbcod">&lt;textarea&gt;</code></td>
+                        <td>Define el número de filas en un área de texto.</td>
+                    </tr>
+                    <tr>
+                        <td><code class="tbcod">rowspan</code></td>
+                        <td><code class="tbcod">&lt;td&gt;, &lt;th&gt;</code></td>
+                        <td>Define el número de filas que una celda de una tabla debe abarcar.</td>
+                    </tr>
+                    <tr>
+                        <td><code class="tbcod">selected</code></td>
+                        <td><code class="tbcod">&lt;option&gt;</code></td>
+                        <td>Define un valor que será seleccionado al cargar la página.</td>
+                    </tr>
+                    <tr>
+                        <td><code class="tbcod">size</code></td>
+                        <td><code class="tbcod">&lt;input&gt;, &lt;select&gt;</code></td>
+                        <td>Define el ancho del elemento (en píxeles). Si el atributo del elemento es del <code class="tbcod">tipo</code> <code class="tbcod">text</code> o <code class="tbcod">password</code> entonces es el número de caracteres.</td>
+                    </tr>
+                    <tr>
+                        <td><code class="tbcod">span</code></td>
+                        <td><code class="tbcod">&lt;col&gt;, &lt;colgroup&gt;</code></td>
+                        <td>Indica el número de columnas que se agrupan.</td>
+                    </tr>
+                    <tr>
+                        <td><code class="tbcod">src</code></td>
+                        <td><code class="tbcod">&lt;audio&gt;, &lt;embed&gt;, &lt;iframe&gt;, &lt;img&gt;, &lt;input&gt;, &lt;script&gt;, &lt;source&gt;, &lt;track&gt;, &lt;video&gt;</code></td>
+                        <td>La URL del contenido integrable.</td>
+                    </tr>
+                    <tr>
+                        <td><code class="tbcod">start</code></td>
+                        <td><code class="tbcod">&lt;ol&gt;</code></td>
+                        <td>Define el número inicial de la lista (si es diferente a 1).</td>
+                    </tr>
+                    <tr>
+                        <td><code class="tbcod">step</code></td>
+                        <td><code class="tbcod">&lt;input&gt;</code></td>
+                        <td>Indica el valor del incremento para un valor numerico o de fecha.</td>
+                    </tr>
+                    <tr>
+                        <td><code class="tbcod">style</code></td>
+                        <td><code class="tbcod">Atributo Global</code></td>
+                        <td>Define los estilos CSS que anulan los estilos establecidos previamente.</td>
+                    </tr>
+                    <tr>
+                        <td><code class="tbcod">target</code></td>
+                        <td><code class="tbcod">&lt;a&gt;, &lt;area&gt;, &lt;base&gt;, &lt;form&gt;</code></td>
+                        <td>Especifica el marco destino en un vínculo.<br>
+                            Valores especiales: "_blank" indica una nueva ventana, "_parent" indica el marco padre del marco que contiene el código fuente, "_self" indica el marco donde está el código fuente y "_top" indica la ventana completa del navegador.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><code class="tbcod">title</code></td>
+                        <td><code class="tbcod">Atributo Global</code></td>
+                        <td>Texto a ser mostrado cuando el cursor esté sobre el elemento.</td>
+                    </tr>
+                    <tr>
+                        <td><code class="tbcod">type</code></td>
+                        <td><code class="tbcod">&lt;button&gt;, &lt;input&gt;, &lt;command&gt;, &lt;embed&gt;, &lt;object&gt;, &lt;script&gt;, &lt;source&gt;, &lt;style&gt;, &lt;menu&gt;</code></td>
+                        <td>Define el tipo de elemento.</td>
+                    </tr>
+                    <tr>
+                        <td><code class="tbcod">value</code></td>
+                        <td><code class="tbcod">&lt;button&gt;, &lt;option&gt;, &lt;input&gt;, &lt;li&gt;, &lt;meter&gt;, &lt;progress&gt;, &lt;param&gt;</code></td>
+                        <td>Define el valor predeterminado a ser mostrado al cargar la página.</td>
+                    </tr>
+                    <tr>
+                        <td><code class="tbcod">width</code></td>
+                        <td><code class="tbcod">&lt;canvas&gt;, &lt;embed&gt;, &lt;iframe&gt;, &lt;img&gt;, &lt;input&gt;, &lt;object&gt;, &lt;video&gt;</code></td>
+                        <td>Para los elementos enumerados aquí, esto establece el ancho del elemento.<br>
+                            <strong>Nota:</strong> En algunos casos, como los <code class="tbcod">&lt;div&gt;</code>, este es un atributo de referencia, en donde debes usar la propiedad CSS <code class="tbcod">height</code> en su lugar.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><code class="tbcod">wrap</code></td>
+                        <td><code class="tbcod">&lt;textarea&gt;</code></td>
+                        <td>Indica la forma en la cual el texto debe ser envuelto.</td>
+                    </tr>
+                    </tbody>
+                </table>
             </ol>
+            <p class="espacioentreparrafo"></p>
 
             <!-- EJERCICIOS PRACTICOS -->
             <h6>Ejercicios</h6>
