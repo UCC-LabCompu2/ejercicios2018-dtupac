@@ -113,26 +113,107 @@
                 <p>Sólo puede ser modificado por una actualización del fabricante. Su memoria es de solo lectura.</p>
                 <p>Una vez que el BIOS comprueba que los componentes de la computadora funcionan correctamente, le pasa el control del hardware al sistema operativo.</p>
 
-
                 <!-- Pregunta Nº 4 -->
                 <li class="pregunta">¿Qué sucede al formatear un disco duro? ¿Qué es el formato rápido?</li>
-                <p></p>
+                <p>Formatear un disco duro consiste en restablecer a este a su estado original para ser reutilizado o reescrito con una nueva información.</p>
+                <p>Al realizar esta operación se elimina toda la información contenida en el.</p>
+                <p>El <b>formato rápido</b> no elimina físicamente los archivos, no reconstruye el sistema de archivos eliminando todos los datos en el proceso,
+                    ni comprueba los sectores defectuosos, sólo construye una nueva tabla sobre la anterior, ocultando los datos que estaban almacenados.</p>
 
                 <!-- Pregunta Nº 5 -->
                 <li class="pregunta">¿Qué es una partición? ¿Qué ventajas tiene particionar un disco duro? ¿Qué son las particiones
                     primarias y secundarias?</li>
-                <p></p>
+                <p>Una partición es la división de espacio que se le asigna a un disco duro. </p>
+                <p>Un disco duro puede tener varias particiones, que son de cierto modo independientes entre si, dado que cada una de ellas tiene su propio sistema
+                    de archivos o formato, y el SO lo reconoce como un disco independiente (aunque físicamente sea uno). </p>
+                <p><b><u>Algunas ventajas de particionar un disco duro:</u></b></p>
+                <p>Se puede instalar el SO en una partición primaria y usar otras particiones secundarias para almacenamiento de datos.</p>
+                <p>Se puede formatear una partición sin necesidad de formatear todo el disco.</p>
+                <p>Los datos que se introducen en cada una de ellas no afectan al espacio de las otras. Y si borramos o formateamos una ellas, el resto no sufrirá cambios.</p>
+                <p><b><u>Particiones Primarias y Secundarias</u></b></p>
+                <ul>
+                    <li><b>Partición Primaria:</b> Es la primera y la partición más importante, ya que se encarga de iniciar la carga del Sistema Operativo.
+                        Es indispensable para almacenar y arrancar el Sistema Operativo. </li>
+                    <li><b>Partición Extendida o Secundaria:</b> Son particiones con el único objetivo de almacenar información. Este tipo de partición no es booteable,
+                        no permite arrancar cargando el Sistema Operativo.</li>
+                </ul>
+                <div class="imax">
+                    <img  src="img/particiones.png" style="width:25%; min-width: 180px; border-radius: 18px" alt="particiones">
+                </div>
 
                 <!-- Pregunta Nº 6 -->
                 <li class="pregunta">¿Qué diferencia existe entre la instalación mínima, típica o estándar y personalizada de un
                     programa? Explique ventajas y desventajas.</li>
-                <p></p>
+                <ul>
+                    <li><b><u>Instalación Mínima:</u></b> es la instalación con la menor cantidad de funcionalidades o características que necesita
+                        un programa para funcionar;</li>
+                    <li><b><u>Instlación Típica o Estánadar:</u></b> es la instalación que suele ser “recomendada” por el fabricante, ya que instala lo mínimo
+                        para funcionar, pero agrega características y funcionalidades que pueden mejorar el uso o el rendimiento del mismo</li>
+                    <li><b><u>Instalación Personalizada:</u></b> es la que permite al usuario elegir que componentes del programa instalar.</li>
+                </ul>
+                <p>Cuadro comparativo:</p>
+                <table>
+                <thead>
+                <tr>
+                    <th>Tipo de Instalación</th>
+                    <th>Ventaja</th>
+                    <th>Desventaja</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>Mínima</td>
+                    <td>Es recomendada para computadoras de bajos recursos y poco espacio en disco.</td>
+                    <td>Suele ser carente de funcionalidades extras, que puede ofrecer el programa.
+                    Suele pedir el CD/DVD de instalación cuando no encuentre alguna librería faltante.</td>
+                </tr>
+                <tr>
+                    <td>Típica</td>
+                    <td>Tener la seguridad que todas las librerías estan disponibles en cualquier comento.</td>
+                    <td>Opcupa mas espacio en disco, se suele instalar programas y plugins asociados que en la práctica no son usados.</td>
+                </tr>
+                <tr>
+                    <td>Personalizada</td>
+                    <td>Te da la opción de instalar lo necesario, evitando programas innecesarios.</td>
+                    <td>No es aconsejable este tipo de instalación para ususarios novatos.</td>
+                </tr>
+                </tbody>
+                </table>
 
                 <!-- Pregunta Nº 7 -->
                 <li class="pregunta">¿Qué es una máquina virtual? ¿Qué ventajas posee?</li>
+                <p>Es un software que simula a un computadora y puede ejecutar programas.</p>
+                <p>Se puede configurar para que los procesos que ejecutan están limitados por los recursos proporcionados.</p>
+                <p>Habitualmente se usa para ejecutar sistemas operativos y "probarlos".</p>
                 <p></p>
-
-
+                <p>Características:</p>
+                <ul>
+                    <li>La MV no puede acceder al resto de datos de la máquina anfitrion.</li>
+                    <li>Para funcionar, una MV mapea los dispositivos virtuales que ofrece a su invitado con
+                        los dispositivos reales presentes en la máquina física.</li>
+                    <li>Copias de Seguridad y Clonación</li>
+                    <li>Crear entornos de prueba</li>
+                </ul>
+                <p></p>
+                <p>Algunas aplicaciones para gestionar MV:</p>
+                <ul>
+                    <li>VMWare</li>
+                    <li>Virtual Box</li>
+                    <li>Qemu</li>
+                    <li>Parallels</li>
+                </ul>
+                <p></p>
+                <p>Algunas Ventajas:</p>
+                <ul>
+                    <li>Probar sistemas operativos</li>
+                    <li>Ejecutar programas antiguos</li>
+                    <li>Usar software que no esta disponible en nuestro SO</li>
+                    <li>Probar una aplicación en distintos sistemas</li>
+                    <li>Copias de Seguridad y Clonación</li>
+                    <li>Crear entornos de prueba</li>
+                    <li>En la industria de telecomuniaciones se esta migrando todos los servidores físicos a servidores virtuales montados sobre datacenter,
+                        solucionado un problema típico de reposición de HW debido al gran uso de recursos de estos servidores.</li>
+                </ul>
             </ol>
             <p class="espacioentreparrafo"></p>
 

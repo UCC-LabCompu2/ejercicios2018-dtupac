@@ -187,6 +187,7 @@ table {
 	font-size: 0.5em;
 	border-collapse: collapse;
 	width: content-box;
+	margin: 1em 0;
 }
 
 td, th {
