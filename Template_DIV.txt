@@ -70,3 +70,61 @@
 <a href="http://www.servidor.com/pagina.html#ancla">Enlace</a>
 
 https://www.youtube.com/watch?v=SJOybVGpouw&list=PL2FOMZ1Ba3pnFwO-fuRdVHx9gLN-xsuhO&index=9
+
+
+<table>
+    <thead>
+    <tr>
+        <th></th>
+        <th></th>
+	<th></th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td></td>
+        <td></td>
+	<td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+	<td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+	<td></td>
+    </tr>
+    </tbody>
+</table>
+
+
+
+
+
+<p><b><u></u></b></p>
+<table>
+    <tbody>
+    <tr>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+    </tr>
+    </tbody>
+</table>

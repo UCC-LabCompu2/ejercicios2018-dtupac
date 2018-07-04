@@ -66,29 +66,121 @@
             <ol>
                 <!-- Pregunta Nº 1 -->
                 <li class="pregunta">¿Qué es un driver o controlador de dispositivo? ¿Para qué sirve?</li>
-                <p></p>
+                <p>Es un programa que permite al SO interaccionar con un periférico (impresora, scaner, etc) o dispositivo
+                    hardware (tarjeta gráfica, tarjeta de sonido, modem, etc), haciendo una abstracción del mismo y proporcionando
+                    una interfaz para poder utilizarlo</p>
+                <p>Le indica al SO como controlar y comunicarse con un dispositivo particular.</p>
+                <div class="imax">
+                    <img  src="img/Driver1.png" alt="Driver1" style="width:30%; min-width: 180px">
+                </div>
+                <p><b>Tipos de Drivers</b></p>
+                <ul>
+                    <li>Existen tantos tipos de controladores como tipos de periféricos</li>
+                    <li>Puede haber más de un controlador para un mismo dispositivo</li>
+                </ul>
+                <p><b>Ejemplos de Drivers:</b></p>
+                <ul>
+                    <li>de Audio (Realtek, SoundBlast)</li>
+                    <li>de Video (ATI, NVIDIA)</li>
+                    <li>LAN o Ethernet</li>
+                    <li>Wireless</li>
+                    <li>Escáners</li>
+                    <li>Impresoras</li>
+                    <li>Mouse</li>
+                    <li>Teclados</li>
+                    <li>Webcam</li>
+                </ul>
+                <p><b>Tipos de drivers:</b></p>
+                <ul>
+                    <li>Fabricantes de dispositivos</li>
+                    <li>Genéricos</li>
+                    <li>Comunidad de Usuarios</li>
+                </ul>
 
                 <!-- Pregunta Nº 2 -->
                 <li class="pregunta">¿Por qué es recomendable mantener los drivers actualizados?</li>
-                <p></p>
+                <p>Los fabricantes de hardware suelen actualizar los drivers para otorgar más funcionalidades,
+                   mejorar el rendimiento o aumentar las medidas de seguridad con la finalidad de corregir errores
+                   o vulnerabilidades que podrían comprometer el equipo de los usuarios.</p>
 
                 <!-- Pregunta Nº 3 -->
                 <li class="pregunta">¿Qué son los dispositivos PnP o “plug and play”?</li>
-                <p></p>
+                <p>En español "enchufar, conectar y usar" es la tecnología o cualquier avance que permite a un dispositivo informático ser conectado
+                   a una computadora sin tener que configurar, mediante jumpers o software específico (no controladores) proporcionado por el fabricante,
+                   ni proporcionar parámetros a sus controladores. Para que sea posible, el sistema operativo con el que funciona el ordenador debe tener
+                   soporte para dicho dispositivo.</p>
 
                 <!-- Pregunta Nº 4 -->
                 <li class="pregunta">En Windows:</li>
                 <ol type="a">
                     <li>¿Qué es el administrador de dispositivos?</li>
+                    <p>Es una utilidad de Windows a través de la cual podemos gestionar todo el Hardware instalado en el equipo. Para abrirlo, abrimos
+                       el Panel de control, desde le menú Inicio.</p>
+
                     <li>¿Qué puede hacer el usuario a través del Administrador de Dispositivos?</li>
+                    <p>El usuario puede realizar lo siguiente:</p>
+                    <ul>
+                        <li>Comprobar si el funcionamiento de los dispositivos es correcto</li>
+                        <li>Actualizar el software de controlador o Driver</li>
+                        <li>Modificar o establecer propiedades a un dispositivo</li>
+                        <li>Habilitar o deshabilitar dispositivos</li>
+                    </ul>
+
                     <li>¿Cómo se distribuyen los Drivers en este sistema operativo?</li>
+                    <p>Una vez abierto el Administrador de dispositivos, se mostrara una lista con todos los dispositivos instalados en el equipo de manera agrupada.
+                       Para ver el contenido de cada uno hacer clic sobre el signo que hay a la izquierda de cualquiera de los grupos de dispositivos.</p>
+                    <div class="imax">
+                        <img  src="img/adm_dispo.png" style="width:40%; min-width: 180px" alt="adm_dispo">
+                    </div>
+                    <p>En caso de que un dispositivo no funcione correctamente o hubiese algún error, el dispositivo se mostrara con un signo de interrogación amarillo.</p>
+                    <table>
+                        <thead>
+                        <tr>
+                            <th>Simbolo</th>
+                            <th>Definición</th>
+                        </tr>
+                        </thead>
+                        <tr>
+                            <td><img src="img/driver_simbolo1.png"></td>
+                            <td>Ocurrió un problema. Muestra un código de error del dispositivo.</td>
+                        </tr>
+                        <tr>
+                            <td><img src="img/driver_simbolo2.png"></td>
+                            <td>El dispositivo está desactivado (está presente físicamente, consume recursos,
+                                pero no tiene un controlador cargado en modo protegido.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><img src="img/driver_simbolo3.png"></td>
+                            <td>Configuración manual en lugar de automática.</td>
+                        </tr>
+                        <tr>
+                            <td><img src="img/driver_simbolo4.png"></td>
+                            <td>El controlador específico del dispositivo no está disponible y se
+                                instalo un controlador compatible.
+                            </td>
+                        </tr>
+                    </table>
                 </ol>
 
                 <!-- Pregunta Nº 5 -->
                 <li class="pregunta">En Linux:</li>
                 <ol type="a">
                     <li>¿Qué muestra la ‘Información del sistema’? ¿Cómo veo los recursos de hardware del equipo?</li>
+                    <p>Obtiene información hacerca de los dispositivos de hardware.</p>
+                    <p><b>Desde el visor de hardware del entorno gráfico:</b></p>
+                    <div class="imax">
+                        <img  src="img/Info_sistema.png" alt="Info_sistema"><br>
+                    </div>
+                    <p><b>Desde la consola bash, con el comando lsmod se puede ver mas detalladamente:</b></p>
+                    <div class="imax">
+                        <img  src="img/lsmod.png" alt="lsmod"><br>
+                    </div>
                     <li>¿Cómo se llama a los drivers en linux?</li>
+                    <p>Los drivers son módulos del Kernel</p>
+                    <p>El kernel de Linux tiene un diseño modular. En el momento de arranque, sólo se carga un kernel
+                       residente mínimo en memoria. Por ello, cuando un usuario solicita alguna característica que no esta presente en el kernel residente,
+                       se carga dinámicamente en memoria un módulo kernel, también conocido algunas veces como un controlador.</p>
                 </ol>
             </ol>
             <p class="espacioentreparrafo"></p>
@@ -97,14 +189,26 @@
             <h6>Ejercicios</h6>
             <ol>
                 <!-- Ejercicio Nº 1 -->
-                <li class="pregunta">En Windows entre a la opción “Panel de Control” >> “Administrador de Dispositivos” o
+                <li class="pregunta">En Windows: entre a la opción “Panel de Control” >> “Administrador de Dispositivos” o
                     desde “Equipo” >> ”Administrar” >> “Administrador de Dispositivos” y verifique que drivers
                     tiene instalados y cuales le faltan.</li>
-                <p></p>
+                <p>Se puede apreciar que hay un controlador que falta instalar, ya que esta con un simbolo de alerta amarillo:</p>
+                <div class="imax">
+                    <img  src="img/adm_disp_Win10.png" alt="adm_disp_Win10">
+                </div>
 
                 <!-- Ejercicio Nº 2 -->
                 <li class="pregunta">En Linux verifique que todos los drivers estén instalados.</li>
-                <p></p>
+                <p>Linux trata a sus controladores como una aplicación más, en el caso de que queramos actualizar nuestros
+                   drivers no deberemos llevar a cabo ninguna acción adicional ni acceder a diferentes menús o realizar otras tareas,
+                   ya que bastará con lanzar una actualización habitual de sistema para que los drivers se incluyan dentro de esta búsqueda y
+                   se instalen en caso de ser necesario.</p>
+                <p>Tambien se puede revisar controladores adicionales:</p>
+                <div class="imax">
+                    <img src="img/actualizar_controladores.png" alt="actualizar_controladores">
+
+                </div>
+
             </ol>
 
         </article>

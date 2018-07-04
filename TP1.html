@@ -222,39 +222,190 @@
             <ol>
                 <!-- Ejercicio Nº 1 -->
                 <li class="pregunta">Especifique los requisitos mínimos de Windows 10 y de Ubuntu</li>
-                <p></p>
+                <p><b><u>Requisitos mínimos para Windows</u></b></p>
+                <table>
+                    <tbody>
+                    <tr>
+                        <td>Procesador:</td>
+                        <td>Procesador o SoC de 1 gigahercio (GHz) o más</td>
+                    </tr>
+                    <tr>
+                        <td>RAM:</td>
+                        <td>1 gigabyte (GB) para 32 bits o 2 GB para 64 bits</td>
+                    </tr>
+                    <tr>
+                        <td>Espacio en disco duro:</td>
+                        <td>16 GB para SO de 32 bits; 20 GB para SO de 64 bits</td>
+                    </tr>
+                    <tr>
+                        <td>Tarjeta gráfica:</td>
+                        <td>DirectX 9 o posterior con controlador WDDM 1.0</td>
+                    </tr>
+                    <tr>
+                        <td>Pantalla:</td>
+                        <td>800×600</td>
+                    </tr>
+                    </tbody>
+                </table>
+
+                <p><b><u>Requisitos mínimos para Ubuntu 18.04LTS</u></b></p>
+                <table>
+                    <tbody>
+                    <tr>
+                        <td>Procesador:</td>
+                        <td>Dual core de 2 GHz o superior</td>
+                    </tr>
+                    <tr>
+                        <td>RAM:</td>
+                        <td>2 gigabyte (GB).</td>
+                    </tr>
+                    <tr>
+                        <td>Espacio en disco duro:</td>
+                        <td>25 GB de espacio libre en el disco duro.</td>
+                    </tr>
+                    <tr>
+                        <td>Tarjeta gráfica y Pantalla</td>
+                        <td>VGA capaz de una resolución de pantalla de 1024x768</td>
+                    </tr>
+                    <tr>
+                        <td>Puertos:</td>
+                        <td>Unidad de USB o CD/DVD.</td>
+                    </tr>
+                    <tr>
+                        <td>Extas:</td>
+                        <td>El acceso a Internet es útil.</td>
+                    </tr>
+                    </tbody>
+                </table>
+                <p><b><u>Requisitos mínimos para un SO basado en Linux</u></b></p>
+                <table>
+                    <tbody>
+                    <tr>
+                        <td>Procesador:</td>
+                        <td>x86 a 1 GHz.</td>
+                    </tr>
+                    <tr>
+                        <td>RAM:</td>
+                        <td>1 gigabyte (GB).</td>
+                    </tr>
+                    <tr>
+                        <td>Espacion en disco duro:</td>
+                        <td>16 GB</td>
+                    </tr>
+                    <tr>
+                        <td>Tarjeta gráfica y Pantalla:</td>
+                        <td>Capaz de soportar una resolución de 800 x 600.</td>
+                    </tr>
+                    <tr>
+                        <td>Extras:</td>
+                        <td>Puerto USB, Tarjeta de red, Conexión a Internet no indispensable.</td>
+                    </tr>
+                    </tbody>
+                </table>
 
                 <!-- Ejercicio Nº 2 -->
                 <li class="pregunta">Configure una máquina virtual para realizar una instalación de Windows 10. Detalle la
                     configuración realizada.</li>
-                <p>Procesador:</p>
-                <p>Memoria Ram:</p>
-                <p>Disco Duro:</p>
-                <p>Tarjeta Gráfica:</p>
+                <p><b>Procesador:</b> 2 virtuales de 4GHz - i7-4790K</p>
+                <p><b>Memoria Ram:</b> 2 GB</p>
+                <p><b>Disco Duro:</b> 50 GB - con disco virtual dinámico.</p>
+                <p><b>Tarjeta Gráfica:</b> 128MB - Resolución de 1024x768</p>
 
                 <!-- Ejercicio Nº 3 -->
                 <li class="pregunta">Entre a la sección del “BOOT Loader” dentro de la BIOS y ordene adecuadamente los
                     dispositivos de arranque del sistema.</li>
-                <p></p>
+                <p>Ejemplo de un Boot Loader en Legacy BIOS</p>
+                <div class="imax">
+                    <img  src="img/Boot_loader.png" alt="Boot_loader">
+                </div>
+                <p>Ejemplo de un Boot Loader en UEFI</p>
+                <div class="imax">
+                    <img  src="img/UEFI_boot_loader1.jpg" alt="UEFI_boot_loader1"><br>
+                    <img  src="img/UEFI_boot_loader2.jpg" alt="UEFI_boot_loader2"><br>
+                    <img  src="img/UEFI_boot_loader3.jpg" alt="UEFI_boot_loader3">
+                </div>
 
                 <!-- Ejercicio Nº 4 -->
                 <li class="pregunta">¿Qué es una UEFI? ¿Qué diferencia tiene con una BIOS? ¿Qué es el modo legacy?</li>
+                <p>De las siglas en inglés: <b>UNIFIED EXTENSIBLE FIRMWARE INTERFACE</b> Es una interfaz entre el sistema operativo
+                    y el firmware que reemplaza la antigua interfaz del BIOS.</p>
+                <div class="imax">
+                    <img  src="img/uefi.png" alt="uefi" style="width:30%; min-width: 180px">
+                </div>
+                <p>Diferencias mas importantes de la UEFI frente al BIOS</p>
+                <ul>
+                    <li>La interfaz permite usar el mouse, e incluye sonidos y animaciones.</li>
+                    <li>El SO carga más rápido, a la velocidad del SSD (Disco Estado Sólido)</li>
+                    <li>Compatible con sistemas de archivos GTP (Guid Partition Table). Discos de 9.4 Zetabytes. 128 particiones.</li>
+                    <li>Compatibilidad nativa con 64bits</li>
+                    <li>Mayor seguridad durante el inicio (evita bootkits, virus que se ejecutan antes de que Windows inicie)</li>
+                </ul>
+                <p></p>
+                <p>UEFI BIOS admite dos modos de inicio: Legacy BIOS y UEFI. Algunos dispositivos y sistemas operativos como Windows XP/Vista
+                    y Windows 7 aún no admiten el BIOS basado en UEFI y sólo se inician desde el modo de inicio Legacy BIOS. Según la situación,
+                    es posible que deba especificar el modo de inicio de UEFI BIOS que desea utilizar: Legacy BIOS o UEFI.</p>
+                <p>En definitiva, el modo Legacy es la opción que nos da la UEFI para usarla como una BIOS antigua, debido a lo expuesto antes.</p>
                 <p></p>
 
                 <!-- Ejercicio Nº 5 -->
                 <li class="pregunta">Instale Windows 10. Describa muy brevemente los pasos que realizó para la instalación del SO.</li>
-                <p></p>
+                <ol>
+                    <li>Hacer click en: Instalar ahora</li>
+                    <li>En el apartado Activar, indico queno tengo clave de producto</li>
+                    <li>Elijo el SO a instalar: "Windows 10 Education"</li>
+                    <li>Acepto los terminos de licencia.</li>
+                    <li>Tipo de instalacion personalizada.</li>
+                    <li>Elijo en que disco quiero instalar Windows.</li>
+                    <li>Espero copiado de archivos.</li>
+                    <li>Configurar datos de usuario para loguearse.</li>
+                    <li>Luego se sigue con unas configuraciones iniciales donde pide aceptar licencias, compartir datos, etc.</li>
+                    <li>Fin</li>
+                </ol>
+                <div class="imax">
+                    <img  src="img/VirtualBox_MV1_david_04_07_2018_05_37_03.png" alt="VirtualBox_MV1_david_04_07_2018_05_37_03"><br>
+                    <img  src="img/VirtualBox_MV1_david_04_07_2018_06_01_44.png" alt="VirtualBox_MV1_david_04_07_2018_06_01_44"><br>
+                    <img  src="img/VirtualBox_MV1_david_04_07_2018_06_02_16.png" alt="VirtualBox_MV1_david_04_07_2018_06_02_16"><br>
+                    <img  src="img/VirtualBox_MV1_david_04_07_2018_06_14_11.png" alt="VirtualBox_MV1_david_04_07_2018_06_14_11">
+                </div>
 
                 <!-- Ejercicio Nº 6 -->
                 <li class="pregunta">Configure una máquina virtual para realizar una instalación de Linux. Detalle la configuración
                     realizada.</li>
-                <p>Procesador:</p>
-                <p>Memoria Ram:</p>
-                <p>Disco Duro:</p>
-                <p>Tarjeta Gráfica:</p>
+                <p><b>Procesador:</b> 1 proc. virtual Intel(R) Core(TM) i7-4790K CPU @ 4.00GHz </p>
+                <p><b>Memoria Ram:</b> 1 GB</p>
+                <p><b>Disco Duro:</b> 16 GB</p>
+                <p><b>Tarjeta Gráfica:</b> VGA con resolución 800x600</p>
+                <div class="imax">
+                    <img  src="img/VirtualBox_MV2_Ubuntu18.04_04_07_2018_06_56_48.png" alt="VirtualBox_MV2_Ubuntu18.04_04_07_2018_06_56_48"><br>
+                    <img  src="img/VirtualBox_MV2_Ubuntu18.04_04_07_2018_07_07_27.png" alt="VirtualBox_MV2_Ubuntu18.04_04_07_2018_07_07_27">
+                </div>
+
 
                 <!-- Ejercicio Nº 7 -->
                 <li class="pregunta">Instale Linux. Describa muy brevemente los pasos que realizó para la instalación del SO.</li>
+                <p>Instalamos Ubunto 18.04 LTS</p>
+                <ol>
+                    <li>Elijo idioma y clic en Instalar Ubuntu.</li>
+                    <li>Luego elijo idioma y disposición de teclado.</li>
+                    <li>Elegimos instalación mínima y que no descargue actualizaciones.</li>
+                    <li>Elegimos borrar disco e instalar Ubuntu.</li>
+                    <li>Confirmamos instalación y luego ubicación.</li>
+                    <li>Configuramos datos de usuario y logueo.</li>
+                    <li>Reiniciamos la MV</li>
+                    <li>Da una opción de cancelar la instalación media, le damos ok para acelerar el proceso.</li>
+                    <li>Luego se realiza algunas configuraciones de personalización iniciales.</li>
+                    <li>Fin</li>
+                </ol>
+                <div class="imax">
+                    <img  src="img/VirtualBox_MV2_Ubuntu18.04_04_07_2018_06_35_47.png" alt="VirtualBox_MV2_Ubuntu18.04_04_07_2018_06_35_47"><br>
+                    <img  src="img/VirtualBox_MV2_Ubuntu18.04_04_07_2018_06_37_30.png" alt="VirtualBox_MV2_Ubuntu18.04_04_07_2018_06_37_30"><br>
+                    <img  src="img/VirtualBox_MV2_Ubuntu18.04_04_07_2018_06_38_15.png" alt="VirtualBox_MV2_Ubuntu18.04_04_07_2018_06_38_15"><br>
+                    <img  src="img/VirtualBox_MV2_Ubuntu18.04_04_07_2018_06_38_28.png" alt="VirtualBox_MV2_Ubuntu18.04_04_07_2018_06_38_28"><br>
+                    <img  src="img/VirtualBox_MV2_Ubuntu18.04_04_07_2018_06_38_56.png" alt="VirtualBox_MV2_Ubuntu18.04_04_07_2018_06_38_56"><br>
+                    <img  src="img/VirtualBox_MV2_Ubuntu18.04_04_07_2018_06_41_59.png" alt="VirtualBox_MV2_Ubuntu18.04_04_07_2018_06_41_59"><br>
+                    <img  src="img/VirtualBox_MV2_Ubuntu18.04_04_07_2018_06_44_58.png" alt="VirtualBox_MV2_Ubuntu18.04_04_07_2018_06_44_58"><br>
+                    <img  src="img/VirtualBox_MV2_Ubuntu18.04_04_07_2018_06_47_34.png" alt="VirtualBox_MV2_Ubuntu18.04_04_07_2018_06_47_34">
+                </div>
             </ol>
 
         </article>
