@@ -91,8 +91,31 @@
 
                 <!-- Pregunta Nº 3 -->
                 <li class="pregunta">¿Qué herramientas suele integrar un entorno de programación? Describa cada una.</li>
-                <p></p>
-
+                <p>Un entorno de programación suele integrar las siguientes herramientas:</p>
+                <ul>
+                    <li><i>Editor de código fuente:</i></li>
+                    <p>Es un procesador de textos orientado para escribir código fuente de
+                        aplicaciones en general en lenguajes de programación.</p>
+                    <li><i>Herramientas de construcción automáticas:</i></li>
+                    <p>Generalmente los editores de código soportan varios lenguajes y son capaces de abrir varios archivos a la vez, resaltar su sintaxis y
+                        ofrecer ayudas contextuales a la hora de escribir o visualizar el código de las aplicaciones.</p>
+                    <li><i>Depurador o Debugger:</i></li>
+                    <p>Permite probar y eliminar los errores del programa.</p>
+                    <p>El depurador permite detener el programa en un punto determinado o en un momento determinado
+                        para que el usuario pueda examinar y modificar la memoria y las variables del programa,
+                        cambiar punto de ejecución, ejecutar una instrucción o partes determinadas de código.</p>
+                    <li><i></i>Compilador:</li></li>
+                    <p>Traduce del lenguaje de programación al lenguaje maquina, código intermedio o texto.</p>
+                    <ul>
+                        <li><i>Lenguajes compilados:</i> C, C++, Fortran, Pascal, Visual Basic.</li>
+                        <li><i>Lenguajes interpretados:</i> Python, JavaScript, HTML, Ruby, PHP.</li>
+                    </ul>
+                    <li><i>Intérprete:</i></li>
+                    <p>Realiza la traducción a medida que sea necesaria, instrucción por instrucción y no guardan el resultado de la traducción.</p>
+                    <p>Los programas interpretados suelen ser más lentos que los compilados debido a la necesidad de traducir el programa mientras se ejecuta,
+                        pero son más flexibles permitiendo reemplazar partes del programa.</p>
+                    <p>Uno de los entornos más comunes de uso de los intérpretes es en los navegadores web, debido a que se ejecutan independientemente de la plataforma.</p>
+                </ul>
 
                 <!-- Pregunta Nº 4 -->
                 <li class="pregunta">¿Qué es un sistema de gestión de versiones o VCS? ¿Qué ventajas tiene?</li>
@@ -122,54 +145,128 @@
 
                 <!-- Pregunta Nº 5 -->
                 <li class="pregunta">¿Qué es Git? ¿Qué servidores se pueden utilizar para ello?</li>
-                <p>es un software de control de versiones diseñado por Linus Torvalds, pensando en la eficiencia y la confiabilidad del mantenimiento
+                <p>Es un software de control de versiones diseñado por Linus Torvalds, pensando en la eficiencia y la confiabilidad del mantenimiento
                    de versiones de aplicaciones cuando éstas tienen un gran número de archivos de código fuente. Su propósito es llevar registro de
                    los cambios en archivos de computadora y coordinar el trabajo que varias personas realizan sobre archivos compartidos.</p>
-
+                <p><b>Git: Servidores</b></p>
+                <ul>
+                    <li><a class="lnk_1" href="https://github.com/" target="_blank" >Github</a></li>
+                    <li><a class="lnk_1" href="https://gitlab.com/" target="_blank">GitLab</a></li>
+                    <li><a class="lnk_1" href="https://bitbucket.org/" target="_blank">Bitbucket</a></li>
+                    <li><a class="lnk_1" href="http://savannah.gnu.org/" target="_blank">GNU Savannah</a></li>
+                    <li><a class="lnk_1" href="https://sourceforge.net/" target="_blank">SourceForge</a></li>
+                    <li><a class="lnk_1" href="https://gitea.io/" target="_blank">Gitea</a></li>
+                    <li><a class="lnk_1" href="https://www.phacility.com/" target="_blank">Phabricator</a></li>
+                    <li><a class="lnk_1" href="https://gogs.io/" target="_blank">Gogs</a></li>
+                </ul>
 
                 <!-- Pregunta Nº 6 -->
                 <li class="pregunta">¿Por qué es importante la documentación de Código?</li>
-                <p></p>
+                <p>La documentación de código es importante porque ayuda a entender lo que se
+                    esta haciendo y porque, y permite el mantenimiento del código.</p>
+                <p><u>Niveles de documentación:</u></p>
+                <ul>
+                    <li><b>Por clase:</b> descripción,autor,fecha y ultima modificación.</li>
+                    <li><b>Por método:</b> descripción del objeto, funcionalidades, parámetros y resultados.</li>
+                    <li><b>De variables:</b> que sean importantes o difíciles de entender.</li>
+                    <li><b>De limitaciones.</b></li>
+                    <li><b>De algoritmos implementados.</b></li>
+                </ul>
+                <p>Un <u>Generador de Documentación:</u> es una herramienta de programación que genera documentación destinada a los programadores
+                    (documentación de API) o a usuarios finales, o a ambos, a partir de un conjunto de código fuente especialmente documentado,
+                    y en algunos casos, archivos binarios.</p>
 
                 <!-- Pregunta Nº 7 -->
                 <li class="pregunta">¿Qué es doxygen? ¿Qué otras herramientas similares existen?</li>
-                <p></p>
+                <p>Doxygen es un acrónimo de dox(document) gen(generator), generador de documentación para código fuente.</p>
+                <p>Es un generador de documentación para C++, C, Java, Objective-C, Python, IDL (versiones Corba y Microsoft), VHDL y en cierta medida para PHP,
+                    C# y D. Dado que es fácilmente adaptable, funciona en la mayoría de sistemas Unix así como en Windows y Mac OS X. La mayor parte del código
+                    de Doxygen está escrita por Dimitri van Heesch.</p>
+                <p><u>Herramientas Similares:</u></p>
+                <ul>
+                    <li><a class="lnk_1" href="http://ashkenas.com/docco/" target="_blank">Docco</a></li>
+                    <li><a class="lnk_1" href="http://usejsdoc.org/" target="_blank">JSDoc</a></li>
+                    <li><a class="lnk_1" href="https://github.com/filamentgroup/doxx" target="_blank">Doxx</a></li>
+                    <li><a class="lnk_1" href="https://sourceforge.net/projects/javadiff/" target="_blank">Jdiff</a></li>
+                </ul>
 
                 <!-- Pregunta Nº 8 -->
                 <li class="pregunta">¿Cuáles son las líneas de comando de GIT para:</li>
                 <ol type="a">
                     <!-- Punto (a) -->
                     <li>Clonar un repositorio</li>
-                    <p>El comando: git clon https://</p>
+                    <p><code>git clone [url]</code></p>
 
                     <!-- Punto (b) -->
                     <li>Actualizar tu repositorio local al commit más nuevo</li>
-
+                    <p><code>git pull</code></p>
 
                     <!-- Punto (c) -->
                     <li>Registrar cambios (añadirlos al Index)</li>
+                    <p><code>git add [filename]</code></p>
+                    <p><code>git add .</code></p>
+
                     <!-- Punto (d) -->
                     <li>Hacer un commit</li>
+                    <p><code>git commit -m "Commit message"</code></p>
+
                     <!-- Punto (e) -->
                     <li>Enviar cambios a repositorio remoto</li>
+                    <p><code>git push origin master</code></p>
                 </ol>
+
+                <p><a class="lnk_1" href="http://rogerdudler.github.io/git-guide/index.es.html" target="_blank">Algunos comandos más, click aquí...</a></p>
+                <p><a class="lnk_1" href="https://services.github.com/on-demand/downloads/es_ES/github-git-cheat-sheet.pdf" target="_blank">O también hacer click aqui...</a></p>
 
                 <!-- Pregunta Nº 9 -->
                 <li class="pregunta">Escriba los comandos de git correspondientes en cada flecha</li>
-                <p></p>
+                <div class="imax">
+                    <img src="img/comandoGit1.png" alt="comandoGit1">
+                </div>
 
                 <!-- Pregunta Nº 10 -->
                 <li class="pregunta">¿Qué función poseen los Bug Trackers? De ejemplos de los más empleados.</li>
-                <p></p>
+                <p>Para asegurar una buena calidad en los proyectos de dimension considerable es importante utilizar un Bug Tracker <b>(BTS)</b> para realizar el seguimiento
+                   de los defectos o Bugs que surgen y son detectados.</p>
+                <p><u>Ejemplos de los mas usados:</u></p>
+                <ul>
+                    <li>Jira</li>
+                    <li>Bugzilla</li>
+                    <li>Flyspray</li>
+                    <li>Trac</li>
+                    <li>The bug Genie</li>
+                    <li>MantisBT</li>
+                </ul>
 
                 <!-- Pregunta Nº 11 -->
                 <li class="pregunta">¿Qué son las pruebas de desempeño? ¿Qué tipo de pruebas se pueden realizar y para qué
                     sirve cada una?</li>
-                <p></p>
+                <p>Las <i>Pruebas de Desempeño o Performance</i> son pruebas que se realizan al software para probar ciertas cualidades del mismo.</p>
+                <ul>
+                    <li><b>Load Test (Pruebas de Carga):</b> Simular la realidad a la que esta expuesto el sistema cuando este en produccion.</li>
+                    <li><b>Stress Test (Pruebas de Strees):</b> Simula mas carga de la esperada.</li>
+                    <li><b>Endurance o Resistencia:</b> Desempeño del sistema después de una carga duradera por un periodo de tiempo largo.</li>
+                </ul>
 
                 <!-- Pregunta Nº 12 -->
                 <li class="pregunta">¿Qué es la integración continua? ¿Qué herramientas se pueden emplear para ello?</li>
-                <p></p>
+                <p>Es una buena practica generar tests para verificar el correcto funcionamiento de las partes del software.</p>
+                <p>Estos test pueden ser manuales (los realiza una persona según un documento) o automáticos (código que prueba otro código).</p>
+                <p>En el caso de los test automatizados, se recurre muchas veces a servidores que corran los test, para poder correrlos en distintos ambientes.
+                   A estos servidores se les llama de Integración Continua.</p>
+                <p><u>HERRAMIENTAA PARA INTEGRACIÓN CONTINUA:</u></p>
+                <p><i>Propio servidor</i></p>
+                <ul>
+                    <li>GitLab CI</li>
+                    <li>Jenkins</li>
+                    <li>Drone.io</li>
+                </ul>
+                <p><i>Cloud</i></p>
+                <ul>
+                    <li>Travis.ci</li>
+                    <li>Codeship</li>
+                    <li>CircleCI</li>
+                </ul>
             </ol>
             <p class="espacioentreparrafo"></p>
 
