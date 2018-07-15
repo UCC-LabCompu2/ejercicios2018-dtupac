@@ -28,6 +28,7 @@
 
 
 <p><a class="lnk_1" href="Ejercicios-JavaScript/" target="_blank">Click aqui</a></p>
+<p><a class="lnk_1" href="" target="_blank">Click aqui</a></p>
 
 
     <link href="css/prism.css" rel="stylesheet" />
@@ -128,3 +129,10 @@ https://www.youtube.com/watch?v=SJOybVGpouw&list=PL2FOMZ1Ba3pnFwO-fuRdVHx9gLN-xs
     </tr>
     </tbody>
 </table>
+
+<iframe src="http://docs.google.com/gview?url=https://services.github.com/on-demand/downloads/es_ES/github-git-cheat-sheet.pdf&embedded=true" style="width:60%; height: 700px;" frameborder="0"> </iframe>
+
+
+https://www.muylinux.com/2018/06/05/alternativas-github/
+http://www.mariouriarte.com/2017/10/git-y-git-flow/
+https://books.google.com.ar/books?id=gQWd49zSut4C&pg=PA337&lpg=PA337&dq=MODELO+DE+SEEHEIM&source=bl&ots=s722utstwe&sig=oVFQUvrzH2uWGyhr5IGy-Aziylw&hl=es-419&sa=X&ved=0ahUKEwj_35Tqyp7cAhWSulMKHePMCfkQ6AEIPDAD#v=onepage&q=Etnogr%C3%A1ficos&f=false
