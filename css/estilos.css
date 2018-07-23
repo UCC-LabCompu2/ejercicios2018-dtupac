@@ -140,7 +140,7 @@ ol li{
 
 .w3-blue,.w3-hover-blue:hover{color:#fff!important;background-color:#2196F3!important}
 
-ul li, ol li { font-family: Calibri; font-size: 0.53em; /*17px*/}
+ul li, ol li { font-family: Calibri; /*font-size: 0.53em; /*17px*/}
 
 #nava{
 	-webkit-padding-start: unset;
