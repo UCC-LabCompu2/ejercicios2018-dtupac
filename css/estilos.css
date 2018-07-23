@@ -231,3 +231,18 @@ img {
 	/*border: 1px groove white;*/
 	box-shadow: 6px 6px 6px black;
 }
+
+#tablilla {
+	font-family: arial, sans-serif;
+	font-size: 1em;
+	border-collapse: collapse;
+	width: content-box;
+	margin: 1em 0;
+}
+#tablilla2 {
+	font-family: arial, sans-serif;
+	font-size: 1em;
+	border-collapse: collapse;
+	width: content-box;
+	margin: 1em 0;
+}
